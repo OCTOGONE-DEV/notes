@@ -1,0 +1,67 @@
+# pixelarity octogone static
+    480px 30em
+    736px 46em
+    980px 61.250em
+    1250px 78.125em
+    1680px 105em
+
+# Barrio bootstrap
+    34em 544px
+    48em 768px
+    62em 992px
+    75em 1200px
+   
+# bootstrap 5 
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  
+# octogone
+  
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xl: 1680px;
+  
+/* media query */
+
+@media all and (max-width: 34em) {
+}
+
+@media all and (max-width: 48em) {
+}
+
+@media all and (max-width: 62em) {
+}
+
+@media all and (min-width: 75em) {
+}
+
+@media all and (min-width: 110em) {
+}
+
+
+
+/* # MEDIA QUERY # */
+
+@media all and (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media all and (min-width: 1200px) and (max-width: 1679.98px) {
+
+}
+
+@media all and (min-width: 1680px) {
+
+}

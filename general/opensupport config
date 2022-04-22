@@ -1,0 +1,41 @@
+support@octogone-it.be
+
+vps54957.lws-hosting.com
+25
+587
+root
+pdWZ8SW
+
+
+login: LWS-338103
+pass: S7j94R5d84
+
+gregory@octogone-it.be
+Abc123456++
+
+ssl0.ovh.net
+# pass/login
+octogone
+Abc123456++
+
+printf 'greg\greg\ZSXiop++--**' | mmencode
+
+
+OCTOGONE-IT.be
+
+Support OCTOGONE-IT.be - 
+
+Note: i use the french language with i-opensupport
+
+in the database what are the mail template "USER_SYSTEM_DISABLED" and "USER_SYSTEM_ENABLED"? 
+Are those mail send when a user is created in the admin interface by an administrator and send to the user if he created or deleted? 
+i am asking that because i've made some test and i dont receive those type of mail template is that case. 
+When i create a user with the admin interface i receieve the mail template "USER_SIGNUP". that s a problem because that new user cant know his password. when i delete a user with the admin interface nomail is send.
+
+the template "TICKET_CREATED" is a confirmation mail  for the user who create the ticket, but in that case user dont receive that confirmation mail.
+
+admin receive no notification when a user close the ticket
+
+no mail template when reopening a ticket
+
+no notification when a user is deleted, banned, desactivated or reactivated.

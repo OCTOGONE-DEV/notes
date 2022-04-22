@@ -1,0 +1,71 @@
+# DATA TYPE
+    string (e.g. "Hello world" , kittens )
+    number (e.g. 42 , 1337px )
+    color (e.g. hotpink , rgb(1, 33, 7) , #BADA55 )
+    list (e.g. (a, b, c) , a b c )
+    map (e.g. (a: 1, b: 2) )
+    bool ( true or false )
+    null ( null )
+    
+# list (like an array)
+    $value: ('Hello', 'world');
+    The first point to know about lists is that it’s the delimiter (either spaces or commas) that makes a list, not the
+    wrapping parentheses
+
+# map
+    $message-themes: (
+    'info': deepskyblue,
+    'danger': tomato,
+    );
+    .message-confirm {color: map-get($message-themes,'info');}
+
+    map is a series of pairs of associated keys and values where keys are unique to each map. While a list is usually tied  
+    to a specific order—as it is basically the only way to find a value within it—a map uses its keys to find their associated 
+    value.
+    
+    You have to know that in Sass—unlike JavaScript, for instance—keys of a map can be of any type and not just strings.
+
+# NOT !
+    Unlike most other languages, Sass lacks a bang operator ( ! ) to get the opposite of a value, such as if (!value) .
+    Instead, it provides the not keyword
+    
+# NULL
+    null is both the value and its type, making it a very specific element of the Sass language
+    
+# VARIABLE
+    This is referred to as variable shadowing in Sass. When declaring in an inner scope
+    (such as a function or rule set) a variable whose name already exists in the global
+    namespace, the local variable is said to be shadowing the global one    
+    
+    ~ global!
+            To definitely override a global variable from a local scope, we use the !global flag.
+    ~ default!
+            Bear in mind that variables with null value are treated as unassigned by default,
+            which means that a variable assignment with !default will override a variable as-
+            signment to null :
+            
+# Interpolation
+    width: calc(100% - $sidebar-width); // calc(100% - $sidebar-width)
+    width: calc(100% - #{$sidebar-width}); // calc(100% - 300px)
+    
+    We are almost done with variables. The last point to grasp is the concept of inter-
+    polation. Often referred to as variable interpolation or variable substitution, this
+    concept is not unique to Sass
+    
+# CONSTANT
+    Sass does not support actual constants.
+    
+    
+# FUNCTION
+    Keep in mind that functions cannot be defined within mixins or other functions.
+    
+    Parameters can also have a default value—in which case they are called optional parameters. Note that optional 
+    parameters must come after any non-optional parameter.
+    
+    // `$a` is mandatory and `$b` is optional (default value being 2)
+    @function multiply($a, $b: 2) {
+    @return ($a * $b);
+    }
+    
+    
+

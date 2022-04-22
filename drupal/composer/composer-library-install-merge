@@ -1,0 +1,27 @@
+COMPOSER REQUIRE
+-------------
+
+composer require wikimedia/composer-merge-plugin
+
+
+ADD TO EXISTING SECTION "EXTRA"
+---------------
+
+"merge-plugin": {
+    "include": [
+        "web/modules/contrib/ckeditor_codemirror/composer.libraries.json"
+    ]
+},
+
+UPDATE LOCK FILE & INSTALL
+-------------
+
+composer update --lock
+
+composer install
+
+
+INSTALL MODULE
+-------------
+
+composer require ckeditor-plugin/ckeditor_codemirror

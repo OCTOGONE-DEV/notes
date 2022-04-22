@@ -1,0 +1,4 @@
+
+            {% autoescape false %}
+              {{ item.entity.field_summary_highlight.value }}
+            {% endautoescape %}

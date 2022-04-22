@@ -1,0 +1,13 @@
+node.js: package eco system
+npm : package manager
+grunt: task runner
+gulp: task runner
+
+# SCSS LINT
+	npm	install	gulp-scss-lint	--save-dev
+	Notice	that	the	 gulp-scss-lint 	plugin	requires	both	Ruby	and	SCSS-lint	installed	already.
+	Now	you	can	add	the	 scss-lint 	task	to	your	 Gulpfile.js :
+	gulp.task('scss-lint',	function()	{
+			return	gulp.src('scss/**/*.scss')
+					.pipe(scsslint());
+	});

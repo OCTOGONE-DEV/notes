@@ -1,0 +1,6 @@
+# desactivate option in services.yml
+debug: false
+auto_reload: false
+cache: true
+
+# reactivate admin theme cache

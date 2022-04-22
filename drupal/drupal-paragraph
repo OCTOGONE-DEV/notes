@@ -1,0 +1,48 @@
+
+# SANDBOX
+{{ content.paragraph_type_tabs_item }}
+
+ 
+paragraph_type_tabs
+    field_paragraph_type_tabs_para
+        paragraph_type_tabs_item
+            field_para_type_tabs_item_title
+            field_para_type_tabs_item_body
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+{% set paragraph_tabs_items = content.field_paragraph_type_tabs_para %}
+
+{% for item in paragraph_tabs_items['#items'] %}
+    {{ drupal_entity('paragraph', item.field_para_type_tabs_item_body) }}
+{% endfor %}
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+{% set paragraph_tabs_items = content.field_paragraph_type_tabs_para %}
+<div style="test"> 
+{% for item in paragraph_tabs_items['#items'] %}
+    {{ drupal_entity('paragraph', item.target_id) }}
+{% endfor %}
+</div>
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+
+{% for item in content.field_paragraph_type_tabs_para  %}
+{{ item.entity.field_para_type_tabs_item_title.value }}
+{% endfor %}
+
+{% for item in content.field_paragraph_type_tabs_para  %}
+{{ item.entity.field_para_type_tabs_item_body.value }}
+{% endfor %}
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+{% set paragraph_tabs_items = content.field_paragraph_type_tabs_para %}
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  {% for item in paragraph_tabs_items['#items'] %}
+    {{ item.entity.field_para_type_tabs_item_title.value }}
+  {% endfor %}
+</ul>
+
+<div class="tab-content" id="pills-tabContent">
+  {% for item in paragraph_tabs_items['#items'] %}
+    {{ item.entity.field_para_type_tabs_item_body.value }}
+  {% endfor %}
+</div>

@@ -1,0 +1,36 @@
+# LAMP
+  installer LAMP:
+  sudo apt-get install lamp-server^
+
+  Redémarrer LAMP
+  sudo /etc/init.d/apache2 restart
+
+# phpmyadmin
+  Installer phpmyadmin:
+  sudo apt-get install phpmyadmin
+
+  Reconfigurer phpmyadmin:
+  sudo dpkg-reconfigure phpmyadmin
+
+  Créer lien symbolique:
+  sudo ln -s /usr/share/phpmyadmin /var/www/phpmyadmin
+
+# Apache
+  Activer mod_rewrite:
+  sudo a2enmod rewrite
+
+# PHP
+  augmenter la taille maximum d'importationde base de donnée:
+  php.ini (/etc/php5/apache2/) = post_max_size = 50M
+  
+# Mysql
+
+# composer
+  Add path to .bachrc:
+  export PATH="$HOME/.composer/vendor/bin:$PATH"
+  
+  Reload terminal:
+  source ~/.bash_profile
+
+# Auto security update
+  sudo dpkg-reconfigure -plow unattended-upgrades

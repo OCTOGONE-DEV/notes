@@ -1,0 +1,8 @@
+VPS config 
+private files
+drush config backup&migrate
+allowed hosts
+settings.php chmod 444
+dev env
+enable Update Manager
+apt-get install php-uploadprogress

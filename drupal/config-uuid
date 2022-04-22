@@ -1,0 +1,7 @@
+You can get the UUID with:
+
+drush config-get "system.site" uuid
+
+And you can change it with
+
+drush config-set "system.site" uuid "fjfj34-e3bb-2ab8-4d21-9100-b5etgetgd99d5"

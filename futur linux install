@@ -1,0 +1,70 @@
+# FEATURE Mint 19
+https://linuxmint.com/rel_tara_cinnamon_whatsnew.php
+    - Timeshift interagit xith update + auto update
+    - software manager Flatpak support
+    -sound level
+
+    You can now press Super+Alt (or use the right-click option on the Show Desktop applet) to quickly see your desklets, without minimizing your windows. When doing so, desklets move above your windows, until you click anywhere.
+
+    In the sound applet, the microphone and the speakers can now be muted separately. An option was added to choose whether or not to force the aspect-ratio of the album art. Tracks can be changed by scrolling left/right (that option is configurable).
+
+    Xed, the text editor, uses a new preferences window. 
+
+    Gnome-system-logs was replaced by gnome-logs.
+
+# FEATURE Mint 19.1
+https://linuxmint.com/rel_tessa_cinnamon_whatsnew.php
+The panel looks more modern but it's also much more configurable than before.
+Nemo is three times faster than before.
+
+You now also have the possibility to turn off VSYNC in the System Settings. This basically delegates VSYNC to your GPU driver 
+
+# FEATURE Mint 19.2
+https://linuxmint.com/rel_tina_cinnamon_whatsnew.php
+Preferences were simplified and now use the newly introduced Xapp Gsettings widgets:
+
+If you don't like overlay scrollbars or if you find them too thin, you can now configure the way they look in the System Settings:
+
+If you find yourself always looking for the same files over and over again... just pin them.
+
+"Boot-Repair" was added to the installation ISO images. It's able to repair most boot configuration problems.
+
+# FEATURE Mint 19.3
+https://linuxmint.com/rel_tricia_cinnamon_whatsnew.php
+Celluloid replaces Xplayer as the default multimedia player.
+
+Gnote replaces Tomboy
+
+Drawing replace gimp
+
+Each panel zone (left, center, right... or top, center and bottom if the panel is vertical) now has the ability to have its own text size and its own size for symbolic icons.
+
+In the file manager preferences it is now possible to configure which actions should be visible in the context menu:
+
+# FEATURE Mint 20.0
+https://linuxmint.com/rel_ulyana_cinnamon_whatsnew.php
+
+The star of the show in Linux Mint 20 is a new application called Warpinator.
+
+NVIDIA Optimus
+
+# FEATURE Mint 20.1
+https://linuxmint.com/rel_ulyssa_cinnamon_whatsnew.php
+Cinnamon 4.6 also introduces fractional scaling
+
+Web Apps : In Linux Mint 20.1 you can turn any website into a desktop application.
+
+Another application which is new in Linux Mint 20.1 is Hypnotix, an IPTV player for M3U playlists.
+
+Favorites ::: You'll see a little star pop up in your panel. That's where all favorite files are, just one click away:
+
+# FEATURE Mint 20.2
+https://linuxmint.com/rel_uma_cinnamon_whatsnew.php
+The Update Manager now supports Cinnamon spice updates (i.e. updates for applets, desklets, themes and extensions).
+
+A new application was implemented to add the ability to bulk rename files. This new application is called Bulky 
+
+Sticky Notes replaces GNote as the default application for taking notes.
+
+Using the system settings you can now limit the maximum amount of RAM Cinnamon can use:
+

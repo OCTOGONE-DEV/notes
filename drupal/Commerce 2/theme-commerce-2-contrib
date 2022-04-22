@@ -1,0 +1,112 @@
+# DRUPAL COMMERCE 2
+    THEME: https://www.drupal.org/project/commerce
+    DOCUMENTATION: https://docs.drupalcommerce.org/commerce2
+    DEV PLATFORM: https://platform.sh/
+
+# STARTUP GROWTH LITE
+    BOOTSTRAP 3
+    THEME: https://www.drupal.org/project/startupgrowth_lite
+    DEV SITE: https://www.morethanthemes.com/themes/startupgrowth
+    DEMO LITE (FREE): https://demo.drupalizing.com/startupgrowth-lite/d8/site/
+    DEMO PREMIUM : https://demo.morethanthemes.com/startupgrowth8/default/
+    $70
+    Note:
+      No mega menus
+      decourvert isotope avec ce theme: http://tiikeridesign.com/blog/using-isotope-gallery-drupal-8-views
+
+# COMMERCE BOOTSTRAP BASE THEME
+    THEME: https://www.drupal.org/project/commerce_bootstrap
+    Note:
+      Module vide apporte rien, just un sous theme de drupal commerce. authnet, 2 theme function.
+
+# SShop  (same dev as eStore)
+    BOOTSTRAP 3
+    THEME: https://www.drupal.org/project/sshop
+    DEMO : https://sshop.optasy.com/
+    Note:
+      provide DB and files : https://sshop.optasy.com/get-demo
+
+# eStore (same dev as sshop)
+    BOOTSTRAP 3
+    THEME: https://www.drupal.org/project/estore
+    DEMO: https://estore.optasy.com/
+
+# Belgrade
+    BOOTSTRAP 3
+    THEME: https://www.drupal.org/project/belgrade
+    DEMO: https://estore.optasy.com/
+    DOCUMENTATION:
+    DEV PLATFORM:
+    DEV SITE:
+    DEMO PREMIUM :
+    Note:
+
+# Shoppe Zymphones Theme
+    BOOTSTRAP 4
+    THEME: https://www.drupal.org/project/shoppe_zymphonies_theme
+    DEMO LITE (FREE): https://demo.zymphonies.com/free-theme/d8/shoppe-zymphonies-theme/
+    PAYED THEME WEBSITE : https://www.zymphonies.com/drupal-premium-theme
+    DOCUMENTATION:
+    DEV PLATFORM:
+    DEV SITE:
+    DEMO PREMIUM :
+    Note:  payed theme website , some theme unavailable, not serious
+
+# Flexi Cart
+    BOOTSTRAP 4
+    THEME:
+    DOCUMENTATION:
+    DEV PLATFORM:
+    DEV SITE:
+    DEMO LITE (FREE):
+    DEMO PREMIUM :
+    Note: LA page du theme est un peu ridicule avec des arguments null : mobiel first, Smooth scroll animation; etc...
+
+
+# Shop Item
+    THEME: https://www.drupal.org/project/shop_item
+    Note: bidon, code non fini
+
+# Exsen
+    THEME: https://www.drupal.org/project/exsen
+    Note: screenchoot en chinois?? code non fini
+
+# ZURB Template
+    THEME: https://www.drupal.org/project/zurb_template
+    Note: ZURB CSS framework, beta
+
+# XXX
+    THEME:
+    DOCUMENTATION:
+    DEV PLATFORM:
+    DEV SITE:
+    DEMO LITE (FREE):
+    DEMO PREMIUM :
+    Note:
+
+# XXX
+    THEME:
+    DOCUMENTATION:
+    DEV PLATFORM:
+    DEV SITE:
+    DEMO LITE (FREE):
+    DEMO PREMIUM :
+    Note:
+
+# XXX
+    THEME:
+    DOCUMENTATION:
+    DEV PLATFORM:
+    DEV SITE:
+    DEMO LITE (FREE):
+    DEMO PREMIUM :
+    Note:
+
+# XXX
+    THEME:
+    DOCUMENTATION:
+    DEV PLATFORM:
+    DEV SITE:
+    DEMO LITE (FREE):
+    DEMO PREMIUM :
+    Note:

@@ -1,0 +1,8 @@
+tester demo: https://www.drupal.org/project/commerce_demo
+check 2 theme function de https://www.drupal.org/project/commerce_bootstrap
+
+# DUPLICATE COMPOSER DISTRIB/COMMERCE
+    "composer/installers": "^1.2",
+    "cweagans/composer-patches": "^1.6.5",
+    "drupal/core-composer-scaffold": "^8.8.0",
+    "oomphinc/composer-installers-extender": "^1.1",

@@ -1,0 +1,203 @@
+# TO DO
+    add multiple media at once
+    image style in media library (not in enti browser)
+    test multiselect
+    
+    rename existing to library on all browser 
+    audio name for flac invisible in media library grid mode 
+    check bulk upoload into article node : what display to use?
+    test bulk upload for all paragraph into article node
+    select image by cliking anywhere, check bootstrap feature for this, refind it.
+    extension removed for fil bulk upload via the media library, extension is keped in node entity browser uploaded file
+    bulk media upload remote video
+    verifier consistance sur le disaply mode du rendu des media dans la forulaire du node. melange css/diaplay mode???
+    to all browser add puload with edit and upload with non edit
+    edit media iframe send to full wensite in iframe???
+    remove module stream wrapper
+    https://www.drupal.org/project/format_bytes
+    
+# VIDEO YOUTUBE
+    === Bulk managment of media
+    delete/publish/unpublish/save media, add different type of mdia with simple drag and drop
+    grid and  table display with direct preview of media file and editing.
+    image ration is keepedd to have an ideo of the image
+    meta data provided
+    === image entity browser
+            in node form 
+                direct preview of the image, it is a scaled thumbnails with smae ratio 
+                of the public website display with focal seetings. 
+                you can delete and edit direclty the media
+                re-ordonate image
+                title is trimed
+                reordonate in modal selection
+                multistep selection
+                in edit you have acce to all the data of the media including the metadata and you can modify it
+            in entity browser
+                browse exsiting image
+                bulk upload with edit
+                bulk upload non edit
+                show how bulk upload works with drag and drop and select file
+                you can set the focal point
+                search for media by name and publishing status
+                type of image accepted: pgn, gif ...
+                orginial size information
+                name is trimed, if you over it you get the full name
+                multi select
+                image ration is keepedd to have an ideo of the image
+                you have to select item before going to the other page
+           on public page
+           show that the image is responsive
+                 image is redimensionned and converted accordinf to specific disaply mode seetings
+                 thus image can have a different presentation : original image is keepeed, in page form, 
+                 entity browser and public page
+                 change css rules for td
+             
+    === audio entity browser
+    === video entity browser
+    === video remote entity browser
+    details authoring and metadata
+    === document entity browser
+ 
+    bulk delete/upload
+
+# COMPOSANT
+    video
+    aubio
+    tabs
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+# DEBUG
+oembed_providers probleme dependance
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+accordion
+tabs
+documents 
+
+carousel
+    table https://www.drupal.org/project/tablefield
+    gallerie 
+    content node https://www.drupal.org/project/content_browser --- CHECK VIDEO AGAIN
+
+link end page 
+twitter https://www.drupal.org/project/media_entity_twitter
+facebook https://www.drupal.org/project/media_entity_facebook
+instagram https://www.drupal.org/project/media_entity_instagram
+
+Media entity slideshow https://www.drupal.org/project/media_entity_slideshow??
+https://www.drupal.org/project/media_expire+
+https://www.drupal.org/project/entity_embed
+
+# IMAGE TYPE
+    media type 
+        /admin/structure/media/manage/audio/fields/media.audio.field_media_audio_file
+        /admin/config/content/entity_browser/media_entity_browser_modal_video/widgets
+    thumbnails video /admin/structure/media/manage/remote_video
+    user picture /admin/config/people/accounts/fields/user.user.user_picture
+    
+# INSTALL MODULE & LIBRARIES
+    library
+        dropzone.js
+    module
+        media
+        media_library
+        entity browser
+        media_entity_browser
+        entity_browser_entity_form
+        inline_entity_form
+        dropzonejs
+        dropzonejs_eb_widget
+        
+        slick
+        slick_extras
+        slick_browser
+        slick_ui
+        slick_views
+        slick_example    
+        
+        ??????
+        focal point
+        Content browser
+        entity_browser_enhanced
+        
+# BASIC CONFIG FOR IMAGE
+  1) Create a browser at /admin/config/content/entity_browser
+        General Settings
+            Display = modal
+            widget selector = tabs
+            Selection Display = no  Selection Display
+        Widget Settings
+            Media Entity DropzoneJS with edit
+            Media type = Image
+            Form mode = default
+
+  2) Add a media filed to a content type
+  
+  3) Manage form display of that media field
+        Widget = entity browser
+        choose an image style that fit your need
+  
+  4) Manage display of  media field
+        Format = rendered entity
+        choose an image style that fit your need
+  
+  5) Create a view used for browsing
+        views.view.entity_browser_images.yml code at the end of file
+
+
+        
+
+# BASIC CONFIG FOR IMAGE + FOCAL POINT
+  
+  1) Manage the media of type image and change the widget  used in  the form display
+        Choose image focal point to the display view used by the entity browser/widget settings + for the media library
+
+
+# BASIC CONFIG FOR IMAGE + FOCAL POINT + PARAGRAPHE
+
+
+
+# BASIC CONFIG FOR IMAGE + FOCAL POINT + RESPONSIVE IMAGE + PARAGRAPHE
+    2) config form and display of the media, create/add the specifi disaply of the player meiaelement
+            /admin/structure/media/manage/audio
+    3) config an entity browser for that media
+            /admin/config/content/entity_browser
+    4) create a view for the form entity browser
+            /admin/structure/views/view/slick_browser_media/edit/
+    5) add paragraphe filed to the content type
+    6) Create a display view for the media
+            /admin/structure/display-modes/view/add
+    7) config an entities browser
+
+
+# SLICK
+    https://www.drupal.org/project/elevatezoomplus
+    https://www.drupal.org/project/slick_lightbox
+    https://www.drupal.org/project/intense
+    https://www.drupal.org/project/slick_paragraphs
+    https://www.drupal.org/project/slick_extras
+    https://www.drupal.org/project/slick_views
+    https://www.drupal.org/project/slick
+    
+# MEDIA PLAYER
+https://www.drupal.org/project/ableplayer
+https://www.drupal.org/sandbox/wrd/2972097
+
+# VIDEO CONFIG
+add new display mode for me dia
+config media video field for sepcific display mode
+condif paragraph
+    add media fiels allowing video and remote video
+    form display = entity browser
+    display = disaply mode created at 1)
+    contenet type (article for exemple) 
+        add paragraph field
+
+
+flac ogg oga mp3
+
+jpg jpeg gif png 
+
+txt doc xls pdf ppt pps odt ods odp
+
+txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages
+

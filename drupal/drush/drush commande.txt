@@ -1,0 +1,131 @@
+INSTALL DRUSH
+------------
+composer require drush/drush
+wget https://github.com/drush-ops/drush/releases/download/8.4.9/drush.phar
+chmod +x drush.phar
+sudo mv drush /usr/bin
+php drush core-status
+drush init
+(verifier qu'il n'y a pas un fichier "drush" qui peut causer des problème de permission)
+
+COMMANDE GENERAL
+------------
+
+#version
+    drush version
+    
+# clear cache
+    drush cr
+
+DRUPAL CORE
+--------
+
+# install
+    drush site-install --db-url=mysql://root:Abc123456++@localhost:3360/multisites --site-name="multisites" --notify
+    drush site-install standard --db-url='mysql://root:Abc123456++@localhost/sandbox' --site-name=sandbox
+    drush site-install --use-existing --uri=http://localhost:3360 --profile=standard
+    drush site-install standard --db-url="mysql://root:Abc123456++@127.0.0.1/multisites" --account-name="admin" --account-pass="123456" --account-mail="founder@satearn.com"
+    drush si standard --db-url=mysql://root:A5955654@localhost/sandbox --db-su=root --db-su-pw=i1111op++-- --site-name="Sandbox" --notify
+    
+# check update
+    drush ups
+
+# config import
+    drush cim
+    
+# config export
+    drush cex
+
+# update all
+    drush up    
+
+# DELETE CONFIG
+drush entity:delete paragraph --bundle="specialities"
+
+# ENABLE DISABLE
+    drush en commerce_paypal
+    drush dis MoDuLeName
+    drush pm:uninstall MoDuLeName
+    
+# RESET ADMIN PASSWD
+    drush upwd admin --password=cattle
+
+# update core
+    drush up drupal (newsest)
+    drush pm-update drupal-8.6.18 (specific branch)
+
+# update db
+    drush updb
+
+# update security only
+    drush up --security-only
+
+# agregation
+    drush -y config-set system.performance css.preprocess 0
+    drush -y config-set system.performance js.preprocess 0
+
+# maintenance momde MODE
+    drush sset system.maintenance_mode 1
+    
+MODULE
+---------
+
+# uninstal module
+    drush pmu
+    
+# install module
+    drush dl feeds
+    
+# list module
+    drush pm-list --type=Module --status=enabled
+    
+# download module
+    drush dl feeds 
+    
+# update module
+    drush up module_name
+
+# update all module except core 
+    drush pm-update --no-core
+
+# DELETE ALL NODE
+drush entity:delete enseign_superieur --bundle=application
+drush entity:delete node --bundle=enseign_secondaire
+    
+    
+# DELTE ALL TERM VOCABULARY
+    Enable the Devel and Devel Generate modules
+    Go to Development > Generate Terms
+    Select the Vocabulary from which you wish to delete terms
+    Enter "0" for number of Terms to generate
+    Check "Delete existing terms before generating new ones"
+    Click Submit
+
+
+THEME
+---------
+
+    drush theme:uninstall ThEmE_NamE
+    drush theme:enable ThEmE_NamE
+    drush config-set system.theme default ThEmE_NamE
+ 
+ BACKUP/RESTORE
+----------------
+
+# backup
+    OK: 
+    drush sql-dump > DB_backup_CLEANING_SEARCH_API-2022-04-13T12-32-40_MANUAL.sql
+    
+    drush archive:dump default --destination=/private-files/test.tar.gz
+    drush sql-dump
+    sudo chown -R gregory drupal8/
+    sudo chown -R :www-data web/
+
+# restore DEZIP  DEZIP  DEZIP 
+    drush sql-cli < DB_backup_FULL_IMPORT_DONE-2022-04-13T09-08-02.mysql
+    
+    drush archive-restore example.tar.gz???
+    
+    drush sql-cli <
+    drush archive-restore ./DB_backup_-2022-03-22T08-04-44.mysql.gz
+    drush archive-restore /home/greg/drush-backups/archive-dump/20191222190923/ares-belgique.20191222_190926.tar.gz

@@ -1,0 +1,31 @@
+# CREATE MULTISITE
+    Create a folder for site1 in your multisite: /d8multisite/sites/site1.d8multisite.com
+     Make a copy of /d8multisite/sites/example.sites.php called /d8multisite/sites/sites.php
+     Edit sites.php so the end of the file looks like this:
+        $sites['site1.d8multisite.com'] = 'site1.d8multisite.com';
+     Copy /d8multisite/sites/default/default.settings.php to the new site's directory as settings.php:
+
+# CREATE SITE STEP BY STEP
+    - create DB
+    - create site in apache2
+    - restart apache2
+    - modify hosts
+    - add folder in /sites + seetings.php + files/ folder
+    - add drush alias 
+    - config backup-migrate name of backup
+    - config backup-migrate destination of backup
+    -modify gulp file put the new url for browser sync
+
+# STRUCTURE
+-- sites
+   -- site1            
+         -- modules
+            -- custom
+            -- contrib
+         -- themes
+            -- custom
+            -- contrib
+         -- files
+         
+         
+         

@@ -1,0 +1,3 @@
+# LINK URI
+{{ item.entity.field_para_type_link_link.uri }}
+ 

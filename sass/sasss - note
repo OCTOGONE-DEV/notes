@@ -1,0 +1,14 @@
+# IMPORT PROPERTIES
+     .row-dark {
+        @extend .row;
+        background-color: #333333;
+        color: #ffffff;
+     } 
+     
+#  nesting media query landscape and portrait
+        @media (orientation: landscape){
+        }
+
+# MODIFY COLOR VARIABLE        
+darken( $base-color, 10% )
+lighten( $base-color, 10% )

@@ -1,0 +1,29 @@
+# GLOBAL INSTALL
+    curl -sS https://getcomposer.org/installer | php
+    sudo mv composer.phar /usr/local/bin/composer
+    in bash file 
+        export PATH="$HOME/.composer/vendor/bin:$PATH"
+    source $HOME/.bashrc
+    
+# Install PHP CURL
+    sudo apt-get install php-curl
+    
+# Install PHP  bcmath
+    sudo apt-get install php-bcmath
+    
+# INSTALL DRUPAL CONSOLE GLOBALY
+    curl https://drupalconsole.com/installer -L -o drupal.phar
+    sudo mv drupal.phar /usr/local/bin/drupal
+    sudo chmod +x /usr/local/bin/drupal
+    
+// # REQUIRE GD
+//    composer require "ext-gd:*" --ignore-platform-reqs
+
+# INSTALL DRUPAL CONSOLE FOR THE SITE
+    composer require drupal/console:~1.0 --prefer-dist --optimize-autoloader 
+
+#  DOWLOAD DRUPAL COMMERCE
+     composer require "drupal/commerce"
+    
+#  ENABLE DRUPAL COMMERCE
+    drupal module:install commerce_product commerce_checkout commerce_cart

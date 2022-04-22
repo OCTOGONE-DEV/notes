@@ -1,0 +1,15 @@
+php -v
+sudo add-apt-repository ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/apache2
+sudo apt-get update
+sudo apt-get install -y php7.1 libapache2-mod-php7.1 php7.1-cli php7.1-common php7.1-mbstring php7.1-gd php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt php7.1-zip php7.1-curl php-xml
+sudo a2dismod php7.0
+sudo a2enmod php7.1
+sudo apachectl -t
+sudo service apache2 restart
+
+# ENABLE module
+phpenmod -v 7.1 YourMOduLe
+module available: php7.1 -m
+
+ext-dom  ext-gd   ext-simplexml   ext-xml 

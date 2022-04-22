@@ -1,0 +1,40 @@
+# DISABLE CSS AND JS CACHING
+    
+# PERSMISSION SETTINGS.PHP 644     
+
+# REBUILD CACHE
+    http://yoursite/core/rebuild.php
+
+# DEFAULT.SERVICES.YML - TWIG DEBUG
+     (NOTE: CAN BREAK VIEW: https://www.drupal.org/node/2914733)
+    cp default.services.yml  -> services.yml 
+    Change value
+        debug: true
+        auto_reload: true
+        cache: false
+
+# SETTINGS.LOCAL.PHP - DESACTIVATE TEMPLATE CACHE
+    IMORTANT : /sites/example.settings.local.php -> /sites/DEFAULT/settings.local.php 
+   uncomment:
+       (line 54) $config['system.performance']['css']['preprocess'] = TRUE;
+       (line 55)  $config['system.performance']['js']['preprocess'] = TRUE;
+       (line 69) $settings['cache']['bins']['render'] = 'cache.backend.null'; 
+       (line 91)  $settings['cache']['bins']['page'] = 'cache.backend.null';
+       (line 91)  $settings['cache']['bins']['render'] = 'cache.backend.null';
+       (line 100)  $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+
+ disable    # $settings['rebuild_access'] = TRUE;
+# SETTINGS..PHP  
+   uncomment the commented 3 lines that mention  * 'settings.local.php'. (line 755,756,757)
+    $settings['update_free_access'] = TRUE;
+      
+# ACTIVATE DEVEL - MYTHEME.THEME
+    to your mytheme.theme add:
+        function YOURTHEMENAME_preprocess_block(&$variables){
+            kint($variables);
+        }
+
+# SERVER PHP CONFIG
+    If you are using PHP 7.0 it is strongly recommended that you set
+    zend.assertions=1 (defaut -1) in the PHP.ini file (It cannot be changed from .htaccess (line 1563)
+    

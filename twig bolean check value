@@ -1,0 +1,2 @@
+{% if content.field_hide_on_desktop['#items'].value == '1' %}
+

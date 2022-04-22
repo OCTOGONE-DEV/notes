@@ -1,0 +1,18 @@
+# SANITIZE CODE
+phpcbf --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor /home/gregory/web-dev/drupal/custom/theme/bfd/web/bfd
+
+# PAREVIEW CODE
+
+# CREATE TAGS
+    git tag 8.x-1.15
+
+# push TAGS
+    git push origin 8.x-2.55
+
+# CREATE RELEASE
+
+# UPDATE DEMO SITE
+
+
+
+git acp 'Issue #3190274 by Renrhaf: Adminimal admin toolbar issue'

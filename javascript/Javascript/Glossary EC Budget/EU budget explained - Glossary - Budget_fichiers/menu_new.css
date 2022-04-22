@@ -1,0 +1,105 @@
+@media all and (max-width:768px)/* FONT-SIZE RULES ONLY FOR DESKTOP */
+	{ .accordion {
+		list-style: none;
+		padding: 0 0 0 0;
+	}
+	.accordion div {
+		font-weight: bold;
+		margin: 1px;
+		cursor: pointer;
+		padding: 5 5 5 7px;
+		list-style: circle;
+	}
+	.accordion ul {
+		list-style: none;
+		padding: 0 0 0 0;
+	}
+	.accordion ul{
+		display: none;
+	}
+	.accordion ul li {
+		font-weight: normal;
+		cursor: auto;
+		background-color: #fff;
+		padding: 0 0 0 7px;
+	}
+	.accordion a {
+		text-decoration: none;
+	}
+	.accordion a:hover {
+		text-decoration: underline;
+	}
+	.euMenu a {
+		display: inline-block;
+	}
+	
+	.activeMobilEentry{
+	  font-weight:bold !important;
+	  }
+	.accordion div.sub span.arrow {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: #69c transparent transparent;
+		border-image: none;
+		border-style: solid;
+		border-width: 9px;
+		display: inline-block;
+		height: 0;
+		right: 4%;
+		overflow: hidden;
+		width: 0;
+		position:absolute;
+		top: 40%;
+		font-weight:normal;
+	}
+	.accordion Div.sub span.arrow.sec {
+		border-color: #98BADC transparent transparent;
+		right: 5%;
+	}
+	.euMenu a:hover, .euMenu a:focus, .euMenu a:active {
+		background-color: #fff !important;
+		color: #074a8b !important;
+	}
+
+}
+
+.euMenu li{ list-style-image:none}
+
+.euMenu ul li ul li a, .euMenu ul li ul li a:visited, .euMenu ul li ul li a:hover {
+    width: auto;
+}
+
+.show-submenu .euMenu li {
+    display: block;
+}
+
+.level_2,.level_3, .level_4{display:none}
+
+.isCurrent .level_2,
+.level_2.isCurrent .level_3,
+.level_3.isCurrent .level_4 {display:block;}
+
+/*-.level_1:hover .level_2,.level_2:hover .level_3{display:block;}*/
+
+@media all and (max-width:768px) /* HORIZONTAL PHONE */
+{
+.euMenu ul li a, .euMenu ul li a:visited, .euMenu ul li a:hover {
+    width: auto !important;
+}
+
+ul#menu.euMenu li.level_1 a{
+}
+
+ul#menu.euMenu li.level_2 a{
+margin-left:15px;
+    border-left: 1px solid #69c;
+}
+
+ul#menu.euMenu li.level_3 a{
+margin-left:30px;
+    border-left: 1px dashed #b9bcd2;
+}
+
+}

@@ -1,0 +1,7 @@
+# DISABLE/ENABLE EXTERNAL ACCES
+    /etc/phpmyadmin/apache.conf
+    comment/uncomment the two line
+        <Directory /usr/share/phpmyadmin> 
+        order allow,deny
+        allow from all 
+        ....

@@ -1,0 +1,3 @@
+    Visit the address about:config
+    Search for the parameter network.stricttransportsecurity.preloadlist and change it’s value to false
+

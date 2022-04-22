@@ -1,0 +1,55 @@
+# RENAME FILE VIA CONSOLE
+cd themes/custom
+export CUSTOM_BARRIO=octogone # change this to your custom theme_name
+cp -r ../contrib/bootstrap_barrio/subtheme $CUSTOM_BARRIO
+cd $CUSTOM_BARRIO
+for file in *bootstrap_barrio_subtheme.*; do mv $file ${file//bootstrap_barrio_subtheme/$CUSTOM_BARRIO}; done
+for file in config/*/*bootstrap_barrio_subtheme.*; do mv $file ${file//bootstrap_barrio_subtheme/$CUSTOM_BARRIO}; done
+mv {_,}$CUSTOM_BARRIO.theme
+grep -Rl bootstrap_barrio_subtheme .|xargs sed -i '' -e "s/bootstrap_barrio_subtheme/$CUSTOM_BARRIO/"
+
+#
+
+#MODIFY CONTENT FILE
+Edit the file yourname.info.yml
+
+name: YourName
+type: theme
+description: 'Your Description.'
+version: VERSION
+core: 8.x
+base theme: bootstrap_barrio
+libraries:
+- yourname/global-styling
+
+Delete the following:
+
+# Information added by Drupal.org packaging script on 2018-08-09
+version: '8.x-4.17'
+core: '8.x'
+project: 'bootstrap_barrio'
+datestamp: 1533828192
+
+Edit /config/schema/yourtheme.schema.yml
+
+# Schema for the configuration files of the Bootstrap Barrio Subtheme.
+
+yourtheme.settings:
+type: theme_settings
+label: 'YourTheme settings'
+
+Edit /color/color.inc line 117
+
+// Preview files.
+'preview_library' => 'youtheme_name/color.preview',
+'preview_html' => 'color/preview.html',
+
+Edit yourname.theme
+
+Rename the function from:
+
+function bootstrap_barrio_subtheme_form_system_theme_settings_alter(&amp;$form, FormStateInterface $form_state)
+
+to:
+
+function yourname_form_system_theme_settings_alter(&amp;$form, FormStateInterface $form_state)

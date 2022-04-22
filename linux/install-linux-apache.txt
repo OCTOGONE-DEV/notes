@@ -1,0 +1,66 @@
+# LAMP
+  installer LAMP:
+  sudo apt-get install lamp-server^ phpmyadmin
+
+
+sudo apt install apache2 php libapache2-mod-php mariadb-server php-mysql phpmyadmin
+
+
+  Redémarrer LAMP
+  sudo  service apache2 restart
+
+# phpmyadmin
+  Installer phpmyadmin:
+  sudo apt-get install phpmyadmin
+
+#SIte Available
+    ServerName www.example.com
+    ServerAlias example.com 
+    
+# disable remote acces to phpmyadmin in /etc/apache2/apache.conf
+<Directory /usr/share/phpmyadmin>
+Order Deny,Allow
+Deny from all
+</Directory>
+
+
+  Reconfigurer phpmyadmin:
+  sudo dpkg-reconfigure phpmyadmin
+
+  Créer lien symbolique:
+  sudo ln -s /usr/share/phpmyadmin /var/www/phpmyadmin
+
+# Apache
+  Activer mod_rewrite:
+  sudo a2enmod rewrite
+
+# CHANGE PHP VERSION
+    activate new version AND desactivate old version
+    sudo a2enmod php7.2
+    sudo a2dismod php7.3
+
+# PHP
+  php -v
+  augmenter la taille maximum d'importationde base de donnée:
+  php.ini (/etc/php5/apache2/) = post_max_size = 50M
+  
+# Mysql
+mysql -V
+CREATE USER 'greg'@'localhost' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON * . * TO 'greg'@'localhost';
+
+# composer
+  Add path to .bachrc:
+  export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+  Reload terminal:
+  source ~/.bash_profile
+
+# Auto security update
+  sudo dpkg-reconfigure -plow unattended-upgrades
+  
+# MODULE  
+sudo a2dismod php5.6
+sudo a2enmod php7.2
+
+sudo apt-get -y install php7.2-opcache php7.2-fpm php7.2 php7.2-common php7.2-gd php7.2-mysql php7.2-imap php7.2-cli php7.2-cgi php-pear php-auth mcrypt imagemagick libruby php7.2-curl php7.2-intl php7.2-pspell php7.2-recode php7.2-sqlite3 php7.2-tidy php7.2-xmlrpc php7.2-xsl memcached php-memcache php-imagick php-gettext php7.2-zip php7.2-mbstring

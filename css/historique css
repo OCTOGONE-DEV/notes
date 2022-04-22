@@ -1,0 +1,48 @@
+# CSS1 décembre 1996 (float)
+
+# CSS2 mai 1998 (display)
+
+# CSS 2.1 juillet 2007
+    Layout in CSS2 and CSS2.1
+        CSS2.1 introduced and defined four different layout modes for rendering web pages. These are systems the
+        browser uses when parsing CSS rules to determine the size and position of elements based on their siblings,
+        flow in the document, and parent elements. These four modes are as follows:
+        • Block layout : For laying out or organizing elements within a document
+        • Inline layout : For laying out text
+        • Table layout : For presenting and laying out tabular data in a two-dimensional grid
+        • Positioned layout : For explicitly positioning elements on the page, removing them
+            from the document flow
+    Several different positioning attribute values are available as part of the CSS2.1 specification:
+            • Static : The normal flow rules apply, and the top , bottom , left , and right properties
+            have no effect.
+            • Relative : The box’s position is determined according to its position within the
+            document flow. Attributes then offset the box’s position relative to its “normal”
+            position. Subsequent elements affected by the box’s place in the document flow act
+            as if there is no offset on the box.
+            • Absolute : The box’s position (and possibly size) is specified with the top , left ,
+            bottom , and right properties. These properties specify offsets from the containing
+            box (which may be the page itself ).
+            • Fixed : The box is positioned as per absolute, but it’s fixed in a position relative to
+            some reference. In most cases, the position is fixed relativ
+
+# CSS3 depuis 2007, mais n'est pas considéré comme terminé.
+    CSS Level 3 is different than the previous iterations in that it’s modular . This allows the CSS Working
+    Group to release different parts of the specification as they mature, and browser vendors are able to adopt
+    functionality rapidly. The CSS Level 3 modular approach is broadly split into four elements :
+    • Selectors and logic
+    • Decorative effects
+    • Typography (including support for internationalization)
+    • Layout
+    CSS Layout Modules
+        CSS Level 3 adds a range of new layout tools to the designer’s arsenal. Each of these modules provides an
+        exciting approach to crafting layouts using only CSS. The modules will change the way you author your styles
+        and, crucially, your HTML markup.
+        Rather than a single approach to crafting layout, four principal modules are in development. Each
+        includes its own concepts, rules, and, most important, browser support. The following chapters look in
+        depth at each of these modules:
+        • CSS Multi-column Layout module
+        • CSS Flexible Box Layout (Flexbox) module
+        • CSS Grid Layout module
+        • CSS Regions Layout module
+
+

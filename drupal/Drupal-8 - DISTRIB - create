@@ -1,0 +1,58 @@
+remove root sysmlink
+
+in distrib  conf file remove :
+  - devel
+  - devel_generate
+  del instgram credentials config
+  remove devel config file
+  remove aminimal theme in composer.json
+change settings.php
+
+remove Bartik file conf
+corrigé in profile info file
+  - eu_cookie_compliance01
+  
+  remove in default content the file
+    -file-filename-.json
+     
+     
+     # EXPORT CONFIG
+
+# EXPORT DEFAULT CONTENT INTO DEFAULT_CONTENT MODULE
+    
+# COPY CONFIG
+   Open the file core.extension.yml from the full exported config zip file, copy the  modules and themes listed in that file into  My_ProFile.profile of your profile.
+    CLEAN ENTRY : devel ,  menu_breadcrumb
+    
+# DELETE FILE
+    delete file "core.extension.yml" in config folder of profile
+    
+# DELETE FEEDS
+    
+# DELETE DEVEL CONFIG FILE
+    
+# DELETE DEVEL IN INFO FILE
+    
+# DELETE DEVEL -file-filename-.json IN CONTENT/FILE FOLDER 
+    
+# DELETE FILES
+/bsd_showcase/content/file from 0 ->11
+    
+# DELETE FEEDS MODULE REMAINING FILES
+    delete file "core.extension.yml" in config folder of profile
+
+# DELETE ID IN YML FILE IN CONFIG FOLDER
+    
+    find ./ -type f -exec sed -i -e '/^uuid: /d' {} \;
+    find ./ -type f -exec sed -i -e '/_core:/,+1d' {} \; 
+
+# COPY PROFILE FOLDER IN THE PROJECT AND CHANGE RIGHTS
+    chmod 777 -R bsd_showcase/
+    sudo chown www-data:www-data -R bsd_showcase/
+    
+    
+???
+  Remove the related profile entry
+     profile: bsd_showcase
+     install: bsd_showcase
+        

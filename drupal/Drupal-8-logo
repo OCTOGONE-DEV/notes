@@ -1,0 +1,6 @@
+# for theme info
+logo:
+  path: 'themes/THEME/logo.png'
+  use_default: false
+  
+  NOTE: logo must be an svg

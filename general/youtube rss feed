@@ -1,0 +1,3 @@
+# RSS FEED
+find the "externalId" in the page channel 
+add the id to "https://www.youtube.com/feeds/videos.xml?channel_id="

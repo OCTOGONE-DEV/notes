@@ -1,0 +1,53 @@
+# Create project page
+    https://www.drupal.org/node/add/project-project
+# create drupal  git repo
+# create issue
+https://www.drupal.org/node/add/project-issue/projectapplications
+
+# GIT INIT
+
+git config --global user.name 'OCTOGONE.dev'
+git config --global user.email 'gregory@octogone.dev'
+git config --global core.editor vi
+
+git checkout -b master 
+git commit -m "Initial commit."
+git remote add origin git@git.drupal.org:project/bfd.git
+git push origin master
+
+#first relaease
+git checkout -b 8.x-1.x 
+git push @branch --delete @branch 
+git clone git@git.drupal.org:project/bfd.git
+
+# push new branch in remote
+git push --set-upstream origin 8.x-1.x
+
+# change default branche
+    Edit your project
+    Click the "Default branch" tab
+    Select the desired branch
+    Click Save
+
+# DELETE REMOTE BRANCH
+git push origin --delete 9.x-2.29
+
+#CODE SNIFFER INSTALL
+- install 
+composer global require drupal/coder
+composer global update drupal/coder --prefer-source
+ 
+
+# CHECK CODE
+phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor /home/gregory/web-dev/drupal-8/custom/theme/bfd/web/bfd
+
+# CORRECT CODE
+phpcbf --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor /home/gregory/web-dev/drupal-8/custom/theme/bfd/web/bfd
+
+
+# NEW REALEASE
+ 
+git tag  8.x-1.12
+git push --tags
+Go to and crreate new release : https://www.drupal.org/node/add/project-release/3111659
+

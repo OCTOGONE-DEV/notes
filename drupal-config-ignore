@@ -1,0 +1,1 @@
+$settings['config_exclude_modules'] = ['backup_migrate'];

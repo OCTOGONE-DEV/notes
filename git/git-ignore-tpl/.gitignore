@@ -1,0 +1,24 @@
+# FOLDER
+/core/
+/vendor/
+/node_modules/
+
+# FILES
+/autoload.php
+/composer.json
+/composer.lock
+/.csslintrc
+/.editorconfig
+/.eslintignore
+/.eslintrc.json
+/example.gitignore
+/.gitattributes 
+/.htaccess
+/.ht.router.php
+/index.php
+/INSTALL.txt
+/LICENSE.txt
+/README.txt
+/robots.txt
+/update.php
+/web.config 

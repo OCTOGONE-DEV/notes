@@ -1,0 +1,9 @@
+# acces to quick edit
+    doner droit a menu conxtuel boligatoirement
+    
+#SETTINGS.PHP
+    settings.pgp = 444
+  
+# FILES
+    Right to folder only          find files -type d -exec chmod 755 {} +
+    Right to file only                find files -type f -exec chmod 644 {} +

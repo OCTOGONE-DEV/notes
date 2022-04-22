@@ -1,0 +1,127 @@
+# FINALISATION
+    Make distrib!
+    MOBILE
+    OK//    remove top/down arrow on mobile.
+    OK//    active link on mobile iss full white
+    OK//    audio and vide oplayer 
+    OK//    social media
+    OK//    gallery
+
+    OK//    patch not applying
+
+    OK//    breadcrumbs not displaying the first level
+    
+copy adminimal.css at composer install
+copy file folder at install
+copu custom theme at install
+custom endinstall screen
+make adminimal custom a bfd admin theme
+    
+= = = = 
+icon avant titre gallery
+GDPRD
+Modal configurator
+notify configuration
+Role per menu https://www.drupal.org/project/menu_per_role
+https://www.drupal.org/project/forum_access
+redirect for visitor to page explaining the shortcut
+
+order text format
+create generaic block
+place holder config
+pathauto
+honeypot
+config path image article
+config path image user
+    config private
+    BAM
+counter : Increment a counter each time content is viewed. 
+404/403
+node admin page 150 items
+file management page no delete button? solution : VBO module
+disable home form main nav and create a home link
+
+# A FAIRE
+https://www.drupal.org/project/twig_field_value
+https://www.drupal.org/project/media_entity_twitter
+https://www.drupal.org/project/video_embed_facebook
+https://www.drupal.org/project/media_thumbnails_video
+https://www.drupal.org/project/audiofield
+beta player:
+https://www.drupal.org/project/ableplayer
+offset title comment not working
+config ajax_loader
+global margin for title h1 -> h6
+footer forum
+entoty browser : slick browser test
+config media_bulk_upload
+config "redirect" module
+config field_group
+module autosave_form tester
+change filed for summary, change the all systeme to force a summary field of a 500 mx character.
+aside content bottom overlap footer
+config alert by mail editor for new comments
+Configure media settings
+    http://ms.media-lib.dev/admin/config/media/media-settings
+    https://oembed.com/#section3
+Theming Audiofield Players
+https://www.drupal.org/project/default_content_deploy 
+Responsive Favicons
+generic icon for user
+	EXIF Orientation
+Redirect After Login
+style display media type from when inserted by ckeditor
+module color code into wysigiw source
+    workflow
+    metatag
+    config settings
+    config dev files env
+    image style
+    user+role
+    mon bfd
+    lorem content
+    user fileds
+    responsive image
+    focal point
+    favicon
+    default 403 / 404
+    
+# DOC
+    change trusted host
+    Notification email address
+    /admin/config/people/accounts
+
+# TYPOGRAPHY
+    pre code: no warp on mobile
+    margin quote block - guillemet est mangé a droite
+    
+# CK EDITOR
+drupal ckeditor "dfn" html tag
+dl/dd
+Figure
+    hgroup
+    pre/code
+    
+# MEDIA-LIB
+composer require drupal/entity_browser
+composer require drupal/content_browser
+composer require drupal/file_browser
+composer require drupal/entity_embed
+composer require drupal/dropzonejs
+composer require drupal/slick_browser
+composer require drupal/embed
+composer require drupal/slick
+
+~ libraries
+    Folder "imagesloaded" https://github.com/desandro/imagesloaded
+    Folder "masonry" https://github.com/desandro/masonry
+    Folder "dropzone" https://github.com/enyo/dropzone
+       
+       
+composer require drupal/
+composer require drupal/
+composer require drupal/
+composer require drupal/
+composer require drupal/
+composer require drupal/entity_browser_enhanced ???
+composer require drupal/media_entity_browser ???

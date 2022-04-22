@@ -1,0 +1,26 @@
+# LOGIN
+    mysql -u root -p
+    
+# CREATE DB (no hyphen)
+    CREATE DATABASE sandbox; 
+
+# DELETE DB
+    DROP DATABASE sandbox;
+    
+# SHOW DB
+    show database SHOW DATABASES;
+    
+# EXIT Mysql
+   quit
+
+# ADD USER TO MYSQL
+    GRANT ALL PRIVILEGES ON *.* TO 'greg'@'localhost' IDENTIFIED BY 'ZSXiop++--';
+
+#LIST USER
+    SELECT DISTINCT User FROM mysql.user;
+
+# CHANGE PASSWORD  
+    mysql -u root -p
+    use mysql;
+    update user set authentication_string=PASSWORD("ZSXiop++--") where User='root';
+    flush privileges;

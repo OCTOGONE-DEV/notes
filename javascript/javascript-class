@@ -1,0 +1,5 @@
+# ADD CLASS
+    $( "p" ).addClass( "myClass" );
+    
+# REMOVE CLASS
+    $( "p" ).removeClass( "myClass" );

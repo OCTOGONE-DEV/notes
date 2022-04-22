@@ -1,0 +1,2 @@
+# PUT FILE IN FOLDER OF THE PROJECT
+    patch -p1 < filE.NaME.patch

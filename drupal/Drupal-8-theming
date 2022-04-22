@@ -1,0 +1,42 @@
+#NOTE GENERAL
+classy est la base theme des themes par defaut, classy use  SMACSS
+Stalbe est l'autre the me de base qui garantie une neutralité pour les sous theme.
+modifier setting.PHP
+    trusted_host_patterns
+     '^localhost$',
+      '^127.0.0.1$',
+
+# INSTALLATION THEME
+crée dossier "custom" dans "/themes"
+crée dossier "contrib" dans "/themes"
+créer dossier avec nom du theme "votre nom de theme"
+copier region du theme de base dans le sub theme
+
+# SERVICES YML
+debug: true
+auto_reload: true
+cache: false
+
+name: Fluffiness
+type: theme
+description: This is a fluffy sub theme of Classy
+core: 8.x
+# Defines the base theme
+base theme: classy
+# Defines libraries group in which we can add css/js.
+libraries:
+  - fluffiness/global-styling
+# Regions
+regions:
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer
+  
+  # TYPE DE CONTENU
+  un contenu est sous typologie, un "blundle"
+  
+  # NO LINK MENU
+put "route:<nolink>" in path

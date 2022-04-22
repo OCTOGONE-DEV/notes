@@ -1,0 +1,73 @@
+# CATEGORIES
+    Base
+        icon
+        tag
+        font
+        print
+    Layout
+    Module
+        sub-modules
+    State
+        media-query
+        pseudo-class
+        class name
+        
+        State Rules
+        Changing State
+        animation
+    Theme
+
+# CSS rules order
+    Box
+    Border
+    Background
+    Text
+    Other
+
+# RULES
+    use class name to distinct element
+    minimmize de depth
+    use "layout-"
+    use "theme-"
+    use "is-"
+    use "nav-site"
+    use "nav-content"
+    use "stacked"
+
+# Here are some guidelines on how to separate the files in your project:
+    • Place all Base rules into their own file.
+    • Depending on the type of layouts you have, either place
+    all of them into a single file or major layouts into
+    separate files.
+    • Put each module into its own file.
+    • Depending on size of project, place sub-modules into
+    their own file.
+    • Place global states into their own file.
+    • Place layout and module states, including media queries
+    that affect those layouts and modules, into the module
+    files.
+
+# GOAL
+    1. Increase the semantic value of a section of HTML and
+        content
+    2. Decrease the expectation of a specific HTML structure
+
+# Goals of a prototype
+    show states
+    review localization
+    isolate dependencies
+    
+# Useful features of a preprocessor
+    Preprocessors offer up plenty of interesting features that can help
+    make authoring CSS easier. A few of them are: 
+        Variables
+        Operations
+        Mixins
+        Nesting
+        Functions
+        Interpolation
+        File importing
+        Extending
+        
+# preprocessor
+    The extensions are limited to simple selectors.

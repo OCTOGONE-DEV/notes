@@ -1,0 +1,92 @@
+/* CSS Document */
+body, *{
+	background-color:#FFF !important;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#layout,.layout-wrapper,.layout-footer,table,#mainArticle{width: 98%!important; margin: 0; float: none;}
+
+table{border-spacing:0!important;width:90%}
+
+
+
+a:link, a:visited {color: #781351}
+
+#toolbox,
+#header,
+#side,
+#feedback,
+.closeButton,
+.openButton,
+a[href='#top'],
+#updatedFooter_toTop,
+#tbl_documentFlow,
+.document .lExpand,
+.document .lCollapse,
+#alphaList,
+div.to_top,
+.close_collapsible,
+.open_collapsible,
+#crumble,
+#menu{
+	display:none !important;	
+}
+figure img.click{
+	max-width:auto;
+	max-height:auto;
+	width:auto;
+	height:auto;	
+}
+figure figcaption{
+	display:none;	
+}
+#updatedFooter{
+	margin-top:50px;
+	font-weight:bold;	
+}
+#updatedFooter li{
+	list-style:none;
+	display:block;
+}
+#footerList_siteName,
+#footerList_pageUrl{
+	display:block	
+}
+.document .description .dText{
+	display:block	
+}
+.document{
+	margin-top:25px;	
+}
+
+.entry span.alt{
+	display:none;	
+}
+
+span.glossary{
+	border:none !important;
+}
+
+h2{
+	border-bottom:solid 1px #000 !important;	
+}
+h2 hr{
+	display:none;	
+}
+
+h2 + div {
+    display: block; !important
+}
+#content{
+	border:none !important;	
+}
+
+img{width:auto; max-width:50%}
+
+
+iframe#infoeuroiframe {height:950px!important}
+
+
+iframe[id*="videoplayer"]{
+	display:none
+	}

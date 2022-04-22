@@ -1,0 +1,2 @@
+# REPLACE RECURSIVLY
+    grep -rl 'stringToReplace' ./ | xargs sed -i 's/stringToReplace/stringReplacement/g'

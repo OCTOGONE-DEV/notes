@@ -1,0 +1,57 @@
+A FAIRE
+-----
+1) dossier site + web + matomo + privates-files
+2) edit .htaccess to redirect to www
+#
+# Force non www to www
+#
+RewriteCond %{HTTP_HOST} ^octogone.dev$ [NC]
+RewriteRule (.*) https://www.octogone.dev$1 [R=301,L]
+
+
+3)config matomo
+2) config favicon
+4) config meta res sociaux
+5) conf git
+6) define provate and tmp files  in seetings.php : 
+$settings['file_private_path'] = '/home/greg/paradigmes/private-files';
+ Check it at  /admin/config/media/file-system
+7) iframe video embeded : /admin/config/media/media-settings
+8) check board repoort
+
+configurer gdpr pop up
+ searches config 
+    modifier image par defaut de article 
+    path auto générique poru titre node  
+    desactiver dans gprd "I have read and agree to the Cookie & Privacy Policy" sur les formualire
+Configuration des block par defaut
+    configuration des view par defaut = activer/desactiver
+    favicon  
+    empêcher anonyme de s'inscrire  
+    test favicon
+    créer role contributeur et redacteur
+    creer page /souscription-au-bulletin-dinformation
+    make metatag generique 
+    path auto , definir schema
+    configurer private file folder 
+    config full html pour article et page 
+    config mailchimp 
+    config matomo
+    Page user
+    redirection vers page specifique apres envoie mail
+    configurer rôle
+    configurer image generique
+    configurer format texte
+    config meta social
+    config honeypot
+    auteur et date position avec le titre
+    voit si layout builder decompose element article 
+    page not found403 et 404   
+    eznvpoyer mail automatiquement quand commentaire 
+    multilangue
+    ajouter le droit "contextual links" poru acces au quick edit    
+    config role  
+    download pdf version of content
+    modal date apparition et dispariton annonce
+    only admin can create account    
+    ordre des format texte /admin/config/content/formats 

@@ -1,0 +1,48 @@
+# REMOVE DDEV SSH AGENT
+docker volume rm ddev-ssh-agent_dot_ssh ddev-ssh-agent_socket_dir
+
+ddev poweroff
+docker inspect ddev-ssh-agent
+ddev stop --unlist hermitage
+
+docker system prune -a
+
+# REMOVE ALL IMAGE
+docker rm -f $(docker ps -a -q)
+
+# STOP SOCKET
+ systemctl stop docker.service
+ 
+# REMOVE IMAGE
+ddev poweroff
+docker rm -f $(docker ps -a -q)
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+docker rmi -f $(docker images -q)
+docker volume rm ddev-ssh-agent_dot_ssh ddev-ssh-agent_socket_dir
+
+# TOTAL CLEAN
+ddev poweroff && docker rm -f $(docker ps -a -q) && docker rmi $(docker images --filter "dangling=true" -q --no-trunc) && docker rmi -f $(docker images -q) && docker volume rm ddev-ssh-agent_dot_ssh ddev-ssh-agent_socket_dir
+
+ddev stop -a
+ddev stop --all --stop-ssh-agent
+
+
+rfay, after annihilating all docker/ddev related "things" everthing and reinstalling everything after, It worked thanks, I can start a ddev machine now.
+
+I think we spotted the problem BTRFS/restoring tool that make Docker/ddev confused.
+
+
+I DID:
+ddev poweroff
+docker rm -f $(docker ps -a -q)
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+docker rmi -f $(docker images -q)
+docker volume rm ddev-ssh-agent_dot_ssh ddev-ssh-agent_socket_dir
+uninstall docker-ce and related package
+sudo rm -rf /var/lib/docker
+removed .ddev and .docker folder in /home/gregory
+reboot
+re-installing everything.
+
+
+https://github.com/drud/ddev/issues/3306

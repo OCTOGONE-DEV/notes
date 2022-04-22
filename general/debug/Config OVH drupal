@@ -1,0 +1,3 @@
+# ovh PHP OPcode
+modifier .ovhconfig
+remplacer  app.engine=phpcgi par app.engine=php

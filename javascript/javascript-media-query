@@ -1,0 +1,36 @@
+
+// bootstrap XS
+if (window.matchMedia("(min-width: 576px)").matches) {
+} else {
+
+}
+
+
+// bootstrap SM
+if (window.matchMedia("(min-width: 576px)").matches) {
+
+} else {
+
+}
+
+
+// bootstrap MD
+if (window.matchMedia("(min-width: 768px)").matches) {
+
+} else {
+
+}
+
+
+// bootstrap LG
+if (window.matchMedia("(min-width: 992px)").matches) {
+
+} else {
+
+}
+// bootstrapXL
+if (window.matchMedia("(min-width: 1200px)").matches) {
+
+} else {
+
+}

@@ -1,0 +1,150 @@
+#languages2{
+	position:absolute;
+	right:1px;
+	top:1px;
+	border:solid 1px #9ab;	
+	z-index:200;
+	font-size:0.8em;
+}
+#languages2 ul{
+	margin:1px;
+	padding:0px;	
+}
+#languages2 li{
+	width:128px;
+	margin:1px 0px 1px 0px;
+	list-style-type:none !important;
+	list-style-image:none !important;
+	padding:1px 2px 1px 2px;
+	cursor:pointer;	
+}
+#languages2 li:hover{
+	background-color:#def  !important;
+}
+#languages2 li.closed{
+	background-image:url(http://ec.europa.eu/wel/template-2012/images/arrows-down.gif);
+	background-repeat:no-repeat;
+	background-position:right
+}
+#languages2 li.open{
+	background-image:url(http://ec.europa.eu/wel/template-2012/images/arrows-up.gif);
+	background-repeat:no-repeat;
+	background-position:right
+}
+#languages2 a{
+	text-decoration:none;
+	color:	#396EA2 !important;
+}
+
+#languages a:hover{
+	text-decoration:underline;
+}
+#languages li.curlang{
+	display:none;
+}
+
+
+#languageTarget{
+	position:absolute;
+	right:0px;
+	top:0px;
+	color:#FFFFFF;		
+	white-space:no-wrap;
+}
+#languageTarget ul{
+	display:block;
+	padding:0px;
+	margin:0px;
+	background:none;
+	height:auto;
+}
+#languageTarget li{
+	display:list-item;
+	list-style:none;
+	clear:both;
+	text-align:left;
+	background:none;
+	border:none;
+}
+
+#languageTarget #top,
+#languageTarget #drop{
+	width:109px;
+	text-align:left;
+	cursor:pointer;
+	padding-left:5px;
+	padding-right:5px;
+	background:#0F4F8F;
+}
+#languageTarget #top{
+	border:solid 1px #FFF;
+	border-bottom:none;	
+	height:15px;
+	line-height:15px;
+	background:url("../img/banner/arrow_language_box.gif") no-repeat scroll 0 0 #0F4F8F;
+	z-index:100;
+}
+#languageTarget #drop{
+	position:absolute;	
+	right:0px;
+	display:block;
+	clear:both;
+	text-align:left;
+	height:auto;
+	border:solid 1px #FFF;
+	border-top:none;
+	padding-top:5px;
+	padding-bottom:5px;
+	z-index:50;
+}
+
+#languageTarget #drop li a{
+	line-height:15px;
+}
+#languageTarget a:link,
+#languageTarget a:visited{
+	color:#FFF;
+}
+
+#header {
+    background-color: #fff;
+    background-image: url("../img/banner/title.gif");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    height: 145px;
+    line-height: 1.4;
+    min-height: 145px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+
+#header #main-title {
+    color: #0065a2;
+    font-size: 24px !important;
+    left: 245px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 65px;
+    z-index: 10;
+}
+
+@media (max-width: 767px){
+#header #main-title {
+font-size: 26px!important;
+position: relative;
+left: 0;
+top: 0;
+padding: 28px 0 0 100px;
+text-transform: none;
+}
+}
+
+@media (max-width: 540px){
+#header #main-title {
+margin-top: 4px;
+font-size: 1em !important;
+}
+}

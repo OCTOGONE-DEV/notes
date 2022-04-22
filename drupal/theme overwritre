@@ -1,0 +1,3 @@
+
+To override existing configuration use \Drupal::configFactory()->getEditable($name) instead of \Drupal:config($name) since the latter is read-only. – user21641 Jan 11 '16 at 13:08
+

@@ -1,0 +1,13 @@
+# COMMAND
+ffmpeg -i bootstrap-for-drupal-menu-desktop.mp4 -vf palettegen palette.png
+ffmpeg -i bootstrap-for-drupal-menu-desktop.mp4 -i palette.png -lavfi paletteuse bootstrap-for-drupal-menu-desktop.gif
+
+ffmpeg -i bootstrap-for-drupal-menu-mobile.mp4 -vf palettegen palette.png
+ffmpeg -i bootstrap-for-drupal-menu-mobile.mp4 -i palette.png -lavfi paletteuse bootstrap-for-drupal-menu-mobile.gif
+
+# SANBOX
+ffmpeg -t 2 -i bootstrap-for-drupal-menu-desktop.mp4 bootstrap-for-drupal-menu-desktop.gif
+ffmpeg -t 8 -ss 0.5 -i bootstrap-for-drupal-menu-desktop.mp4 -r "15" bootstrap-for-drupal-menu-desktop.gif
+ffmpeg -ss 61.0 -t 2.5 -i bootstrap-for-drupal-menu-desktop.mp4 -f gif bootstrap-for-drupal-menu-desktop.gif
+ffmpeg -ss 61.0 -t 2.5 -i bootstrap-for-drupal-menu-mobile-2020-02-06_10.49.42.mp4 -i palette.png -filter_complex "[0:v][1:v] paletteuse" bootstrap-for-drupal-menu-desktop.gif
+bootstrap-for-drupal-menu-desktop.mp4

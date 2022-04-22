@@ -1,0 +1,51 @@
+# A FAIRE
+  pas de playlist si un seule media
+si poster upload, pas de poster default.
+Ajouter chaamp form field qui defini type de media
+max height for mesdia
+    subtitle support
+    doucle clik full screen
+    simple clik play
+    thumbnails suport for all type of video, createticket at drupal.org
+    twitch url
+    facebook url    
+    twitter url
+
+# MEDIA TYPE
+
+# audio
+    audio/mp4
+    audio/mpeg
+    audio/mp3
+    audio/ogg
+    audio/oga
+    
+    
+    HTML5
+    video/mp4
+    video/webm
+    video/ogg
+
+    HLS
+    application/x-mpegURL
+    application/vnd.apple.mpegURL
+
+    M(PEG)-DASH 
+    application/dash+xml
+
+    SoundCloud
+    video/soundcloud
+    video/x-soundcloud
+
+    SOCIAL MEDIA
+    video/facebook
+    video/x-facebook
+    video/vimeo
+    video/x-vimeo
+    video/youtube
+    video/x-youtube
+    video/dailymotion
+    video/x-dailymotion
+    video/twitch
+    video/x-twitch
+    

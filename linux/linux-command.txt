@@ -1,0 +1,192 @@
+ # SERVER COMMAND
+  restart server                           sudo reboot
+  shut-down server                     sudo poweroff
+  restart network                        config sudo /etc/init.d/./networking restart
+  network info                              ifconfig
+  reconfigure keyboard               dpkg-reconfigure keyboard-configuration
+  Install software                          sudo apt-get   install toto-software
+  Remove software sudo apt-get    autoremove --purge toto-software
+  Show Distrib realease           lsb_release -a
+  Show ubuntu  of mint             cat /etc/upstream-release/lsb-release
+  Show version detail             cat /etc/*release
+  See hardware details            lshw
+  Clear bash history              history -c
+  See running process             pstree, ps -e
+  check shell                     echo $SHELL
+  kernel in use                 uname -r
+  reload bashrc                   source ~/.bashrc
+  Search history             history | grep "stuff"
+  resolve timestamp problem       touch *
+  clean                           sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+  See space usage                 df -h
+  reconfigure keyboard            sudo dpkg-reconfigure console-data && sudo apt-get install console-data
+  Change date and time            sudo date 072909232016.55 (moi/jour/heure/minute/année/seconde)
+  delete kernel                             sudo apt-get purge linux-headers-3.13.0-98* 
+  date                                 Check system time
+  watch file in real time   sudo tail -f fileNamE
+
+# NETWORK
+    edit hostfile sudo vi /etc/hosts
+    edit hostname vi /etc/hostname
+
+# SYMLINK
+change symlink DEST / SYMLINK NAME
+  ln -sfn /media/data/Vidéos Vidéos 
+# FILE COMMAND 
+  create a file                   touch toto.txt
+  visualize file                  cat /toto/tata.txt
+  del empty directory       rmdir
+   del dir full                     rm -rf 
+  make file executable            chmod +x toto.htm
+  change right recursively        chmod -R 654 /toto/tata
+  delete folder content           rm -rf totofolder/
+  del all file in folder          rm  totofolder/*
+  rename file or folder           mv /home/greg/toto.htm /home/greg/tata.htm
+  copy file or folder             cp /home/greg/toto.htm /home/greg/tata.htm
+  Copy a file via SSH             scp -r toto@158.168.135.112:/home/toto/bidule/tata.gz /home/tatou/bazar/tata.gz
+  Copy folder content             cp -a /source/. /dest/
+  Rsync                           rsync -r source/* destination
+  Find file                       find / -name "postgresql*"
+  move all file to parent folder    mv * ../
+  See folder size                 du -s greg/
+  See folder size                 du -sh greg/
+  Find                            find / -name "postgresql*" 
+  Create Symbolic link            ln -s /var/www/html/web /home/devrgr01
+  Remove Symbolic link            rm /opt/foo/link
+  check inode                               sudo find . -xdnev -type f | cut -d "/" -f 2 | sort | uniq -c | sort -n
+  folder size           du -sh TheFolDer/
+  Right to folder only          find files -type d -exec chmod 755 {} +
+  Right to file only                find files -type f -exec chmod 644 {} +
+  search history            history | grep command-name
+  Folder size   du -h MyFolDer
+  
+ # SOFTWARE
+    check wich version is available:   apt-cache policy
+  
+ # VSFTPD
+    sudo vi /etc/vsftpd.conf
+ 
+# ARCHIVE 
+  UnCompress gzip (gz)            gunzip filename.gz
+  Compress gzip (gz)              tar -zcvf filename-vps.tar.gz foldername/
+  UnCompress gzip (tar.gz)            tar -zxvf archive.tar.gz --remove-files  -C web
+  Compress zip                    zip -r zipfile.zip Adobe\ Suite\ CC\  2021
+  UnCompress zip                  unzip octo.zip -d octofolder/
+  extract into folder               find -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
+  name massively
+   extract massivaly                for f in *.tar.gz; do tar xf "$f"; done /// for f in *.zip; do unzip "$f"; done
+   
+# FIREWALL UBUNTU
+  Open a port                     sudo ufw allow 22 
+  Check Open Port                 sudo ufw status verbose 
+  Disable firewall                sudo ufw disable
+  enable firewall                 sudo ufw enable
+  Restart Firewall                sudo ufw reload
+  FTP: 21 / SFTP: 22 / SSH: 22 / 
+
+#GREP
+    delete entry 
+        history -d 1320
+    search history
+        history|grep YourString
+
+# VI USE
+  command mode                    ESC
+  insert mode                     i
+  copy line                     y
+  past line                     p
+  Line mode                       ESC
+  Delete line                       dd
+  Select all and delete           :%d
+   /string	Search forward for string
+   ?string	Search back for string
+   n	Search for next instance of string
+   N	Search for previous instance of string
+
+# users and groups
+  Add group			sudo addgroup totogang
+  list all group		compgen -g
+  list group member		getent group totogang
+  list group of the member  id
+  see user home         getent passwd louis-marie
+  list all user			compgen -u
+  Add user			useradd  toto
+  del user   sudo deluser toto
+  shift user			su toto 
+  add user to group		sudo adduser greggroup www-data-user
+  Add group			groupadd totogroup
+  add user and his home: sudo useradd -d /home/toto -m toto
+  make a user sudo:      usermod -aG sudo
+  remove home user:  deluser --remove-home toto
+  remove sudo right:    sudo deluser USERNAME sudo
+  Shown right permission	ls -la 
+  change password		passwd toto
+  change user/group recursivly	 chown -R greg:greg www-data bazar/
+  change user property chown himanshu tmpfile/
+  change group property chown :friends tmpfile/
+  change user home		usermod -d /home/greg/websites/ares-lm louis-marie
+  Make a user a super user	sudo usermod -a -G sudo drupal
+  deny ssh acces        usermod -s /bin/false totouser
+
+# CREATE A USER
+  Add user and home:	    sudo useradd -d /home/nora -m nora
+  make a user sudo:       usermod -aG sudo
+  change password:		passwd toto
+
+# LAMP
+  See PHP version                 php -v
+  See clearMySQL version          mysql -V
+  See Apache version              apache2 -V
+  anable site                           sudo a2ensite file.conf
+  disable site                          sudo a2dissite file.conf
+  console connect               mysql -u root -p
+  cp /media/gregory/Transcend/software/apache2/ms8.build.dev /etc/apache2/sites-available
+  
+# APACHE
+    Create passwd   sudo htpasswd -c /home/greg/websites/bootstrap-for-drupal/web/data/htpasswd
+    
+# PROFTPD
+  auto start proftpd              update-rc.d proftpd defaults
+  
+  scp custom.tar.gz gregory@185.216.25.202:/home/gregory/webserver/silouane/themes
+ 
+  
+  1) Open Vim editor,
+2) Get the path of your home directory by typing :echo $HOME
+3) Check if you have .vimrc file in $HOME location,(if you don't have create it)
+4) Add the following line line to .vimrc file
+   set nocompatible
+        or
+     set nocp
+     
+     
+# PROFTPD
+  auto start proftpd		update-rc.d proftpd defaults
+
+# ENABLE ROOT LOGIN IN PROFTPD
+  <Global>
+    RootLogin on
+    RequireValidShell off
+    UseFtpUsers off
+    AllowForeignAddress on
+  </Global>
+
+# ADD THIS DIRECTORY CONFIG TO ACTIVATE MOD REWRITE
+  <Directory /var/www/html>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+    Order allow,deny
+    allow from all
+  </Directory>
+  
+#SSH
+	**avoid deconnection from client
+	Create a file ~/.shh/config
+  Host *
+  ServerAliveInterval 240
+
+# Symlinks
+ln -s /path/to/file symlinkFileFolder
+ln -s /opt/solr-8.11.1 orientation
+
+ln -s "/var/www/VPS OVH 222045/local"/ "/media/documents/Web Dev/ULTRAEDIT/projet/Windows/VPS OVH 222045"/ readus

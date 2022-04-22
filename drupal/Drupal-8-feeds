@@ -1,0 +1,27 @@
+# CVS FILE
+    must be UTF-8
+
+# FEED CONFIG
+    Import period : off
+    Fetcher : directory
+    Perser : CSV
+    Author : admin
+    
+# MAPPING
+      save filed map one by one
+       
+# IMAGE
+    path to image file must be ABSOLUTE
+    place image in same folder than the CVS for exemple) parce que feeds va les copier dans le dossier
+    configurer pour ce field
+    ~ Mapping config : reference filename - existing file: replace - autocreate : no
+      
+# TAXONOMY
+    Autocreate terms: Yes
+      
+# BODY
+    Format: Full HTML
+    
+    drush feeds-import-all QT_STRUCTURES_AUTORISEES__CONTENT
+    
+    

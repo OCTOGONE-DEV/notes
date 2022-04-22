@@ -1,0 +1,51 @@
+Region-specific block templates are not available in Drupal 8.
+
+# PAGE
+    page--front.html.twig
+
+# NODE
+    node--[nodeid]--[viewmode].html.twig
+    node--[nodeid].html.twig
+    node--[content-type]--[viewmode].html.twig
+    node--[content-type].html.twig
+    node--[viewmode].html.twig
+    
+# TAXONOMY
+    taxonomy-term--[tid].html.twig
+    taxonomy-term--[vocabulary-machine-name].html.twig
+
+# FIELD
+    field--node--[field-name]--[content-type].html.twig
+    field--node--[field-name].html.twig
+    field--node--[content-type].html.twig
+    field--[field-name].html.twig
+    field--[field-type].html.twig
+    
+# REGION
+    region--[region].html.twig
+    
+# COMMENT
+    field--node--[comment-field-name]--[content-type].html.twig
+    
+# FORUM
+    forums--containers--[forumid].html.twig
+    forums--[forumid].html.twig
+    forums--containers.html.twig
+    forums.html.twig 
+
+    forums--topics--[forumid].html.twig
+    forums--[forumid].html.twig
+    forums--topics.html.twig
+    forums.html.twig
+
+# VIEW
+    views-view--[viewid]--[view-display-id].html.twig
+    views-view--[viewid]--[view-display-type].html.twig
+    views-view--[view-display-type].html.twig
+    views-view--[viewid].html.twig
+    
+# VIEW FIELD
+    views-view-field--[viewid]--[view-display-id]--[fieldid].html.twig
+    views-view-field--[viewid]--page--[fieldid].html.twig
+    views-view-field--block--[fieldid].html.twig
+    views-view-field--[fieldid].html.twig

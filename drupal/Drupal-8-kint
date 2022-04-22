@@ -1,0 +1,27 @@
+# composer install
+composer require drupal/devel
+composer require kint-php/kint
+composer require kint-php/devel_kint_extras
+
+# EXEMPLE IN A TWIG TEMPLATE
+    {{ kint(page) }}
+    {{ kint(page.content) }}
+    {{ kint(page.content.bootstrap_for_drupal_distrib_content) }}
+    
+# JUST VARIABLES
+{{ kint(_context|keys) }}
+{{ kint(page.content.bootstrap_for_drupal_distrib_content|keys) }}
+
+
+# PRO TIPS
+Any Twig variable that does not have a hashtag can be print by using a . in front.
+Any variable that has a hashtag must be printed using the brackets and hashtag [‘#taxonomy_term’].
+
+Variables cannot be passed into incompatible entities without preprocessing or using include to replace them. Variables that are defined in Pattern Lab cannot be used in Drupal’s html.twig templates. Similarly node variables (like the node title) cannot be used in a block template without preprocessing the block to include node variables.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+# PATH TO GET VARIABLE
+block
+pluginCollection 
+manager
+definitions

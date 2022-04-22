@@ -1,0 +1,47 @@
+DRUSH8
+------
+
+# FILE
+    in /home/gregory/.drush copy drushrc.php to test.aliases.drushrc.php
+    
+# CODE
+    $aliases['test'] = array (
+      'root' => '/home/gregory/www/drupal/multisites-dev/web',
+      'uri' => 'ms.test.dev',
+      'path-aliases' => array(
+        '%dump-dir' => '/tmp',
+      ),
+    ); 
+    
+# TEST
+    Clear the comand file cache
+        drush cache-clear drush
+   Test
+        drush @test status
+        
+# NOTE
+    "root" is the root instalaltion folder of the multisite instance
+    "uri" is hte name of the folder of the specific site
+    
+    
+DRUSH 10
+-------
+
+# CONFIG FILE
+    create in "projectDrupAlRooT/drush/sites" a file named "self.site.yml"
+    
+# CODE
+test:
+  root: /home/gregory/www/drupal/multisites-dev/web
+  uri: ms.test.dev
+ 
+# NOTE
+    "root" is the root instalaltion folder of the multisite instance
+    "uri" is hte name of the folder of the specific site
+    
+# COMMAND
+    drush @sItEnAmE cr
+    
+# TEST
+    drush site:alias @self
+

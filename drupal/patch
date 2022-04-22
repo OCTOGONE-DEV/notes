@@ -1,0 +1,5 @@
+#PATCH
+patch -p1 < paragraphs-2901390-82-withtests.patch
+
+#REVERT PATCH
+patch -p1 -R < block-block_name_collision_on_theme_creation-2858897-15.patch

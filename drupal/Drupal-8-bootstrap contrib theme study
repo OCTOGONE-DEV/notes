@@ -1,0 +1,109 @@
+# BootBase
+    Library : yes
+    mobile menu : not working (all deplied)
+    Note: script non necessaire
+
+# Bootstrap4
+    Library : yes
+    mobile menu : 3rd level not working (same in desktop), no animation second level
+    NOTE: index.html boostrap all object
+
+# Barrio
+    Library : no
+    mobile menu : not working. Nav in templates!
+    NOTE: 
+
+# varbase
+    Library : yes
+    mobile menu : 3rd level not working (same in desktop), no animation second level
+    NOTE: 
+    
+# BS Base 
+    Library : no
+    mobile menu : not working. NO Nav in templates!
+    NOTE: 
+    
+# Business+
+    Library : yes. 
+    mobile menu : not working. sub level desktop not  working, mobile menu all deplied. NO Nav in templates!
+    NOTE: 
+    
+# Business+ lite
+    Library : yes. 
+    mobile menu : not working. sub level desktop not  working, mobile menu all deplied. NO Nav in templates!
+    NOTE: 
+    
+# CONFERENCE +
+    Library : yes
+    mobile menu : not working. sub level desktop not  working,  no mobile menu. NO Nav in templates!
+    NOTE: 
+    
+# CONFERENCE + lite
+    Library : yes
+    mobile menu : not working. sub level desktop not  working,  no mobile menu. NO Nav in templates!
+    NOTE: 
+    
+# CLARO
+    Library : no
+    mobile menu : not working. sub level desktop not  working,  no mobile menu. EXPERiMENTAL? not foun in 
+    NOTE: 
+
+# Electra
+    Library : yes
+    mobile menu : 3rd level not working (same in desktop), no animation second level
+    NOTE: 
+    
+# ghuesthouse lite
+    Library : no
+    mobile menu : not working. NO Nav in templates!
+    NOTE: 
+    
+# tweme
+    Library : no
+    mobile menu : not working. NO Nav in templates!
+    NOTE: 
+    
+# varbase
+    Library : yes
+    mobile menu : 3rd level not working (same in desktop), no animation second level
+    NOTE: 
+    
+# Great Zymphonies
+    Library : yes
+    mobile menu : 3rd level not working (same in desktop),  animation OK. Does'nt open to top. hambuger button link missplaced 
+    NOTE: 
+    
+# Minimal Lite (same as below)
+    Library : yes
+    mobile menu : not sub level, region for slide... 
+    NOTE: 
+    
+# Top+ Lite
+    Library : yes
+    mobile menu : not sub level, region for slide... 
+    NOTE: 
+    
+# YG Biz 
+    Library : yes
+    mobile menu : not sub level, also in desktop
+    NOTE: 
+
+# Yg Business One
+    Library : yes
+    mobile menu : not sub level, also in desktop
+    NOTE: 
+    
+# YG Business Plus Theme 
+    Library : yes
+    mobile menu : not sub level, also in desktop
+    NOTE: 
+    
+# YG Medical 
+    Library : yes
+    mobile menu : not sub level, also in desktop
+    NOTE: 
+    
+# YG Hotel 
+    Library : yes
+    mobile menu : not sub level, also in desktop
+    NOTE: 

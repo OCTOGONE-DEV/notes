@@ -1,0 +1,5 @@
+composer show drupal/core-recommended
+
+composer update drupal/core --with-dependencies
+drush updatedb
+drush cr

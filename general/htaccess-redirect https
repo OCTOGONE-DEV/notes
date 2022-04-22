@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.octogone-it.be/$1 [R=301,L]
+
+#force www to root
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#redirect to WWW
+RewriteCond %{HTTP_HOST} ^revelation-ares.be$ [NC]
+RewriteRule (.*) https://www.revelation-ares.be$1 [R=301,L] 

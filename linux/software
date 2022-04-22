@@ -1,0 +1,4 @@
+# TRASH EMPTY COMMAND LINE
+    sudo apt install trash-cli
+    Empty the trash bin
+        trash-empty

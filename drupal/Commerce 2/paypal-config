@@ -1,0 +1,10 @@
+Ok I sussed this out quicker than I expected. So for anyone else having this issue do this..
+
+    Login to the merchant account NOT the developer account.
+    Menu on Top right Click Profile > Profile and settings
+    My selling preferences > API access > update
+    Under Pre-built payment solution > Manage API permission
+    Under Option 2 > View API Signature
+    Under View or Remove API Signature expose the fields to show the Credential API Signature, API Username, API Password.
+
+Add these to your PayPal settings in the commerce payment making sure you set this to live.

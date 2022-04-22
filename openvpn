@@ -1,0 +1,15 @@
+# INSTALL REPO
+wget https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub
+apt-key add openvpn-repo-pkg-key.pub
+
+
+sudo wget -O /etc/apt/sources.list.d/openvpn3.list https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-focal.list
+(change focal in the above url to the corresponding name of your linux distro)
+
+# START OPENVPN
+openvpn3 session-start --config /home/gregory/Téléchargements/Slack/gregory.devreese__ssl_vpn_config.ovpn
+
+
+# PPP VPN
+gregory.devreese
+wW6BePA@Fh0cg!XYFZ9U

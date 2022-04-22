@@ -1,0 +1,14 @@
+# COLOR LIHGTER / DARKER
+    darken( $base-color, 10% )
+    lighten( $base-color, 10% )
+
+    saturate( $base-color, 20% )
+    desaturate( $base-color, 20% )
+
+    adjust-hue( $base-color, 20% )
+    - transparency
+    rgba( $base-color, .7 )
+
+# ALIGN ITEM TO BOTTOM
+Basically, the answer is to give to the last of the middle elements a flex grow : flex-grow: 1;  
+==================================================================================

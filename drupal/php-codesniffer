@@ -1,0 +1,6 @@
+# ANALYSE
+phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor /home/gregory/web-dev/drupal/custom/theme/bfd/web/bfd
+
+# APPLY CORRECTION
+phpcbf --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor /home/gregory/web-dev/drupal/custom/theme/bfd/web/bfd
+

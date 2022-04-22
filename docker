@@ -1,0 +1,108 @@
+STEP
+========
+
+1) install docker
+
+2)update docker composer    
+  curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" > ./docker-compose
+    sudo mv ./docker-compose /usr/bin/docker-compose
+    sudo chmod +x /usr/bin/docker-compose
+
+3) install DDEV
+    curl -LO https://raw.githubusercontent.com/drud/ddev/master/scripts/install_ddev.sh && bash install_ddev.sh
+
+4) INIT DDEV 
+    ddev config --project-type=drupal9 --docroot=web --create-docroot
+    ddev start
+    
+5) Install drupal9 instance in specific forlder of your choice
+    ddev composer create "drupal/recommended-project"
+    ddev composer require drush/drush
+    ddev drush site:install -y
+    ddev drush uli
+    ddev launch
+    
+# INSTALL DATABASE
+    ddev import-db
+ PROMPT ===   /home/gregory/www/DEPT/database/backup-2021-08-02T15-59-16.mysql.gz
+# RESET PASSWROD DRUPAL DRUSH
+    drush uli
+
+# describe URL
+ddev describe
+
+# UNLIST
+ddev stop --unlist intranet-mfwb-v3
+
+# DELTE CONFIG
+   ddev  drush entity:delete shortcut_set
+
+# CLEAR CACHE
+    ddev exec drush cr
+
+# CHECK SITE ID DRUPAL
+    ddev drush config-get "system.site" uuid
+
+# CHANGE SITE ID DRUPAL
+    ddev drush cset system.site uuid "UUID" -y
+    ddev drush cset system.site uuid 4d58e386-3062-442f-b405-4d0eaf5a63fb -y
+
+# EXEC DRUSH COMMAND
+    ddev exec drush 
+    
+# DELETE INSTANCE TOTALY
+    ddev stop
+    ddev stop --remove-data
+    
+# DRUPAL INSTANCE
+Login admin
+PASS : cSoCuYb8jB
+
+# CHANGE PORT
+in apache2 conf add port
+change port in /.ddev/config.yaml
+
+
+# settings.ddev.php
+web/sites/default/settings.ddev.php
+$dir = dirname(DRUPAL_ROOT);
+
+
+// This specifies the default configuration sync directory.
+// For D8 before 8.8.0, we set $config_directories[CONFIG_SYNC_DIRECTORY] if not set
+if (version_compare(Drupal::VERSION, "8.8.0", '<') &&
+  empty($config_directories[CONFIG_SYNC_DIRECTORY])) {
+  $config_directories[CONFIG_SYNC_DIRECTORY] = $dir . '/config/default';;
+}
+// For D8.8/D8.9, set $settings['config_sync_directory'] if neither
+// $config_directories nor $settings['config_sync_directory is set
+if (version_compare(DRUPAL::VERSION, "8.8.0", '>=') &&
+  version_compare(DRUPAL::VERSION, "9.0.0", '<') &&
+  empty($config_directories[CONFIG_SYNC_DIRECTORY]) &&
+  empty($settings['config_sync_directory'])) {
+  $settings['config_sync_directory'] = $dir . '/config/default';;
+}
+// For Drupal9, it's always $settings['config_sync_directory']
+if (version_compare(DRUPAL::VERSION, "9.0.0", '>=') &&
+  empty($settings['config_sync_directory'])) {
+  $settings['config_sync_directory'] = $dir . '/config/default';;
+}
+
+
+
+Docker version 18.09.7
+
+
+ [notice] Synchronized extensions: uninstall pathauto.
+ [notice] Synchronized extensions: uninstall token.
+ [notice] Synchronized extensions: uninstall ctools.
+ [notice] Synchronized extensions: uninstall adminimal_admin_toolbar.
+ [notice] Synchronized extensions: uninstall admin_toolbar_tools.
+ [notice] Synchronized extensions: uninstall admin_toolbar_links_access_filter.
+ [notice] Synchronized extensions: uninstall admin_toolbar.
+ [notice] Synchronized extensions: uninstall easy_breadcrumb.
+ [notice] Synchronized extensions: uninstall backup_migrate.
+
+
+
+docker-compose version 1.22.0

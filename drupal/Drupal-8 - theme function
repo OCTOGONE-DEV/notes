@@ -1,0 +1,28 @@
+// IF BLOCK ID MATCHES LIST - ADD CLASS
+function tweet_preprocess_block(&$variables){ 
+  $featured = array('block-tweet-customblockone','block-tweet-customblocktwo','block-tweet-customblockthree');
+  $id = $variables['attributes']['id'];
+
+  // If block id matches list - add class
+  if(in_array($id, $featured)){
+    $variables['attributes']['class'][] = 'col-md-4';
+  } 
+} 
+
+/ CREATE COMMENT COUNT VARIABLE FOR TEMPLATE
+  $count = _octo_comment_count($id);
+  $variables['comment_count'] = _octo_plural($count, 'Comment', 'Comments');
+}
+
+function _octo_comment_count($id) {
+  $count = db_query("SELECT comment_count FROM   comment_entity_statistics WHERE entity_id = :id", array(':id' => $id))->fetchField();
+  return empty($count) ? '0' : $count;
+}
+
+function _octo_plural($count, $singular, $plural) {
+  if ( $count == 1 )
+    return $count . ' ' . $singular;
+  else
+    return $count . ' ' . $plural;
+}
+

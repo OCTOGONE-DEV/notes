@@ -1,0 +1,24 @@
+# INSTALL
+#get curl:
+sudo apt-get update
+sudo apt-get install curl git php7.0-curl php7.0-bcmath
+
+#get composer:
+curl -s https://getcomposer.org/installer | php
+
+# move composer into a bin directory you control:
+sudo mv composer.phar /usr/local/bin/composer
+ composer create-project drupalcommerce/project-base afrifood --stability dev
+creat folder "config/sync" in root folder of project  if error 
+install auto sku and configure token in product ype  for eahc product type
+
+#VIDEO  https://www.youtube.com/watch?v=BmFFPozHKFU
+1) create currency
+2) create store
+3) create product + variation
+4) product attribute create an entity reference into the variation
+5) to test : product attribute rendered entity 
+6) order hgistory of user
+    payment method
+7) taxes integrated with avalara
+8) promotions

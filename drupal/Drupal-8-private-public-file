@@ -1,0 +1,9 @@
+# SET PRIVATE FOLDER
+create "private-files" folder in root instance
+    settings.php@523
+    $settings['file_private_path'] = '/home/kieran/subdomains/u2/u2-private-files';
+    sudo composer require defuse/php-encryption
+        in /admin/config/development/backup_migrate/settings/destination/edit/private_files?destination=/admin/config/development/backup_migrate/settings/destination
+        add  private://backup_migrate/
+        
+        clear cache

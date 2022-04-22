@@ -1,0 +1,200 @@
+FONCTIONALITY
+------------
+https://www.drupal.org/project/sitewide_alert
+
+
+AUTHENTIFICATION
+-----------------
+https://www.drupal.org/project/guzzle_oauth
+  
+BLOCK
+------
+https://www.drupal.org/project/block_visibility_groups
+https://www.drupal.org/project/recreate_block_content
+
+CKEDITOR
+----
+https://www.drupal.org/project/entity_embed
+https://www.drupal.org/project/insert
+https://www.drupal.org/project/codesnippet
+https://www.drupal.org/project/ckeditor_iframe
+
+BOOTSTRAP
+----
+  https://www.drupal.org/project/bootstrap_paragraphs
+
+COMMENT
+--------
+https://www.drupal.org/project/comment_notify
+
+COMPOSER
+----------
+https://www.drupal.org/project/composerize
+
+CONFIGURATION
+--------
+  https://www.drupal.org/project/features
+
+DEVELOPPEMENT
+--------
+https://www.drupal.org/project/stage_file_proxy
+https://www.drupal.org/project/devel
+https://www.drupal.org/project/config_split
+https://www.drupal.org/project/coder
+https://www.drupal.org/project/vdd
+
+EDITOR
+---
+  https://www.drupal.org/project/markdown
+  https://www.drupal.org/project/geysir
+  https://www.drupal.org/project/workbench
+  https://www.drupal.org/project/paragraphs 
+
+ENTITIES
+-----
+  https://www.drupal.org/project/entity_browser
+  https://www.drupal.org/project/entity_reference_revisions (gros module +100k user)
+  https://www.drupal.org/project/eva (attache view to entities)
+  https://www.drupal.org/project/block_field
+  https://www.drupal.org/project/file_browser
+  https://www.drupal.org/project/entity_browser_block
+
+FILE ENTITIES BROWSER
+------------
+    https://www.drupal.org/project/entity_browser
+    https://www.drupal.org/project/entity_embed
+    https://www.drupal.org/project/dropzonejs 
+    LIBRARIES
+       Folder "imagesloaded" https://github.com/desandro/imagesloaded/archive/v3.2.0.zip
+       Folder "masonry" https://github.com/desandro/masonry/archive/v3.3.2.zip
+       Folder "dropzone" https://github.com/enyo/dropzone
+
+FORM
+---
+  https://www.drupal.org/project/chosen
+  
+FORMATS
+-------
+  https://www.drupal.org/project/allowed_formats
+
+FIELD
+---
+  https://www.drupal.org/project/field_group
+  https://www.drupal.org/project/field_defaults
+  https://www.drupal.org/project/field_formatter
+  https://www.drupal.org/project/filefield_paths
+  https://www.drupal.org/project/text_summary_options
+  
+  https://www.drupal.org/project/entityqueue
+
+SEARCH
+---
+  https://www.drupal.org/project/elasticsearch_connector
+  
+FILE
+---
+https://www.drupal.org/project/file_entity
+
+ICON
+---
+  https://www.drupal.org/project/linkicon
+
+LINK
+---
+  https://www.drupal.org/project/pathologic
+
+LAYOUT
+----
+https://www.drupal.org/project/dynamic_layouts
+
+MAILING
+----
+  https://www.drupal.org/project/swiftmailer
+  https://www.drupal.org/project/mandrill
+  https://www.drupal.org/project/mailsystem
+
+MEDIA
+---
+  https://www.drupal.org/project/lightning_media
+  https://www.drupal.org/project/videojs
+  https://www.drupal.org/project/audiofield
+  https://www.drupal.org/docs/8/modules/video
+  https://www.drupal.org/project/media_directories
+  https://www.drupal.org/docs/8/core/modules/media-library-module
+
+MENU
+----
+  https://www.drupal.org/project/menuimage
+
+MIGRATION
+---
+https://www.drupal.org/project/migrate_plus
+https://www.drupal.org/project/migrate_tools
+https://www.drupal.org/project/deploy
+
+MODAL
+---
+  https://www.drupal.org/project/message (framework?)
+
+PATH
+---
+https://www.drupal.org/project/redirect
+
+PDF OF CONTENT
+---------
+https://www.drupal.org/project/printfriendly
+https://www.drupal.org/project/entity_print
+
+PROFILE
+------
+https://www.drupal.org/project/config_profile
+https://www.drupal.org/project/default_content
+https://www.drupal.org/project/default_content_set
+
+PUBLISH
+---
+https://www.drupal.org/project/publishcontent
+
+RESTFULL
+------
+https://www.drupal.org/project/restui
+  
+ROLE
+---
+https://www.drupal.org/project/masquerade
+
+SERIALIZATION
+--------
+INFO:
+https://www.drupal.org/docs/8/modules/jsonapi/jsonapi-vs-cores-rest-module
+https://link.springer.com/chapter/10.1007/978-3-642-04930-9_48
+https://www.drupal.org/project/csv_serialization
+
+SECURITY
+-------
+https://www.drupal.org/project/advban
+
+THEME
+----
+  https://www.drupal.org/project/skinr
+
+TWIG
+---
+  https://www.drupal.org/project/components
+  https://www.drupal.org/project/twig_tweak
+-  https://www.drupal.org/project/tlh
+-  https://www.drupal.org/project/bamboo_twig
+
+UPLOAD
+---  
+  https://www.drupal.org/project/alt_stream_wrappers
+  https://docs.acquia.com/cloud-platform/manage/files/broken/#uploads-settingsphp
+
+USER
+---
+https://www.drupal.org/project/profile
+
+VIEW
+---
+  https://www.drupal.org/project/views_data_export
+  https://www.drupal.org/project/viewfield

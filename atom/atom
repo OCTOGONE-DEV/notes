@@ -1,0 +1,22 @@
+# find/replace inproject
+ctrl + Shift + f
+
+# preview markdown
+ctrl + Shift + m
+
+# option
+ctrl + ,
+
+
+# INSTALL or UPDATE
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt-get update
+
+You can now install Atom using apt-get (or apt on Ubuntu):
+
+# Install Atom
+sudo apt-get install atom
+# Install Atom Beta
+sudo apt-get install atom-beta
+

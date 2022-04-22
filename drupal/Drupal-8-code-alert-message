@@ -1,0 +1,17 @@
+<div data-drupal-messages="data-drupal-messages">
+<div aria-label="Message d'état" class="messages messages--status" role="contentinfo">
+<h2 class="visually-hidden">Message d'état</h2>
+Le contenu '<em class="placeholder"><a href="/fr/node/27" hreflang="fr">Fere Gemino Gravis Iusto Quis Suscipere Uxor</a></em>', de type 'Article', a été mis à jour.</div>
+</div>
+
+<div data-drupal-messages="data-drupal-messages">
+<div aria-label="Message d'état" class="messages messages--warning" role="contentinfo">
+<h2 class="visually-hidden">Message d'état</h2>
+Le contenu '<em class="placeholder"><a href="/fr/node/27" hreflang="fr">Fere Gemino Gravis Iusto Quis Suscipere Uxor</a></em>', de type 'Article', a été mis à jour.</div>
+</div>
+
+<div data-drupal-messages="data-drupal-messages">
+<div aria-label="Message d'état" class="messages messages--error" role="contentinfo">
+<h2 class="visually-hidden">Message d'état</h2>
+Le contenu '<em class="placeholder"><a href="/fr/node/27" hreflang="fr">Fere Gemino Gravis Iusto Quis Suscipere Uxor</a></em>', de type 'Article', a été mis à jour.</div>
+</div>

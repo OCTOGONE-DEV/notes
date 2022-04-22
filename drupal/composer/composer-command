@@ -1,0 +1,50 @@
+# MODULE
+    composer require drupal/console:~1.0 --prefer-dist --optimize-autoloader
+    composer global require drush/drush
+    composer require drupal/backup_migrate
+
+# CREATE INSTANCE
+    composer create-project drupal/recommended-project sandbox
+
+# INSTALL SPECIFIC VERSION
+    composer require refinery29/test-util:0.10.2
+
+# INSTALL DEV/BETA
+composer require drupal/alt_stream_wrappers:@dev
+composer require drupal/alt_stream_wrappers:@beta
+
+# INSTALL/REMOVE MODULE
+    composer require drupal/commerce_paypal
+    composer remove drupal/MoDulE_NaMe
+    composer self-update 
+
+# UPDATE SPECIFIC VERSION
+    require drupal/media_entity_twitter:^2.6
+ 
+ #UPDATE DRUPAL CORE ONLY
+    composer update drupal/core-recommended --with-dependencies
+    
+# UPDATE MODULE
+    composer update drupal/MoDulE_NaMe
+    update all 
+        composer update
+    
+# UPDATE LIBRARY
+    add libraties code into composer.json
+        composer update
+ 
+# MINIMUM REQUIREMENT
+    two command
+        composer config minimum-stability dev
+        composer config prefer-stable true
+    ignore requirements
+        composer require drupal/media_thumbnails_video --ignore-platform-reqs
+
+
+composer require drupal/alt_stream_wrappers:8.1-dev
+
+
+
+composer require drupal/adminimal_theme drupal/adminimal_theme drupal/adminimal_admin_toolbar drupal/admin_toolbar drupal/backup_migrate
+
+drush en adminimal_theme

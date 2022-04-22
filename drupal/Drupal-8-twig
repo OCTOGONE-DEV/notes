@@ -1,0 +1,70 @@
+# PATH NODE ID
+les chemin avec node ID ne sont pas traité par auto, c'est normal et indiqué dans le readme
+
+# TEMPLATE NAMING
+views-view-field--{views machine name}--{page or block machine name}--{field name}.html.twig
+
+# DEFINE CLASS
+    <ul{{ attributes.addClass('nav nav-pills nav-main') }}>
+
+# ADD CLASS
+    {% set classes = ['landing', 'front'] %}
+    then  to html tag : {{ attributes.addClass(classes) }}
+    
+# ATTACH LIBRARY TO A TEMPLATE
+    {{ attach_library('octo/scroll-to') }}
+    
+# AVOID DUPLICATE : WHITOUT
+    {{ content|without('field_image','field_teaser', 'field_tags') }}
+    
+# CHECK NUMBER OF ITEMS
+    {% if items|length > 1 %}
+	    ...
+    {% else %}
+        ...
+    {% endif %}
+    
+# FOR EACH
+    {% for item in items %}
+	    ...
+	{% endfor %}
+	
+# LAYOUT CONDITION
+					{% if page.sidebar_first %}
+						<aside class="layout-sidebar-first" role="complementary">
+							<div class="col-md-3">
+								{{ page.sidebar_first }}
+							</div>
+						</aside>
+					{% endif %}
+
+					{% if page.sidebar_second and page.sidebar_first %}
+						{% set col_class = 'col-md-6' %}
+					{% elseif page.sidebar_second or page.sidebar_first %}
+						{% set col_class = 'col-md-9' %}
+					{% else %}
+						{% set col_class = 'col-md-12' %}
+					{% endif %}
+
+					<div class="{{ col_class }}">
+						{{ page.content }}
+					</div>
+
+					{% if page.sidebar_second %}
+						<aside class="layout-sidebar-second" role="complementary">
+							<div class="col-md-3">
+								{{ page.sidebar_second }}
+							</div>
+						</aside>
+					{% endif %}
+
+# VARIABLE USED BY MODULE				
+		{{ title_prefix }} 
+		{{ title_suffix }}
+
+# FIND BLOCK ID
+    drush ev "print_r(array_keys(\Drupal::service('plugin.manager.block')->getDefinitions()));"
+    Block - configuration entity
+        drush ev 'print_r(\Drupal::configFactory()->listAll("block.block."));'
+    Block - content entity
+        drush sqlq 'SELECT id, info FROM block_content_field_data'

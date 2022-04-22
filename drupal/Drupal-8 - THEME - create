@@ -1,0 +1,3 @@
+phpcbf --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor /home/gregory/web-dev/drupal-8/custom/theme/bfd/web/bfd
+
+block module need tio be in install folder

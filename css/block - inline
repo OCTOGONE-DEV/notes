@@ -1,0 +1,23 @@
+# ÉLÉMENTS DE NIVEAU BLOCK
+Un élément block a les caractéristiques suivantes, non limitatives :
+    Si aucune largeur n'est définie, il prendra toute la largeur de son élément parent.
+    Il peut avoir des marges et des paddings.
+    Si aucune hauteur n'est définie, il prendra la hauteur de ses éléments enfants (en supposant qu'il n'y a pas de "float"   ou de positionnement sur des éléments environnants).
+    Il ignore la propriété vertical-align.
+
+# ÉLÉMENTS DE NIVEAU INLINE
+Un élément inline a les caractéristiques suivantes, non limitatives :
+    Il s'inscrit dans le flux du texte
+    et donc ne 'saute' pas à la ligne comme le ferait un élément block
+    Il accepte la propriété white-space.
+    Il ignore les marges top et bottom mais applique les marges left et right, ainsi que tout padding.
+    Il ignore les propriétés width et height.
+    S'il est flotté à gauche ou à droite, il devient automatiquement un élément de niveau block, et prend toutes ses caractéristiques.
+    Il accepte la propriété vertical-align.
+    
+# INLINE-BLOCK
+c'est une manière de mettre les éléments inline tout en préservant leurs capacités d'éléments block, tels que la possibilité de définir une largeur et une hauteur, des marges et paddings top et bottom, etc."
+Voici quelques cas où inline-block serait utile :
+    Pour placer plusieurs éléments de type block sur la même ligne horizontale sans les flotter.
+    Pour permettre à un élément de type inline d'avoir une hauteur et une largeur tout en conservant sa nature inline.
+    Pour permettre à un élément inline d'avoir des marges ou des paddings.

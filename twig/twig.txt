@@ -1,0 +1,18 @@
+# CREATE BS4 ROW
+
+{% for date, date_info in dates %}
+   {% if loop.first %}
+      <div class="row"> {# open row #}
+   {% endif %}
+
+
+       {# your code here #}
+
+
+    {% if loop.index % 3 == 0 %}
+        </div><div class="row"> {# after 3 iterates close row and open new #}
+    {% endif %}                
+    {% if loop.last %}
+        </div> {# close last row #}
+    {% endif %}
+{% endfor %}

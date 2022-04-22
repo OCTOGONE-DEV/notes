@@ -1,0 +1,51 @@
+COMPOSER REQUIRE
+-------------
+
+composer require oomphinc/composer-installers-extender
+
+
+ADD TO EXISTING SECTION "REPOSITORIES"
+---------------
+add to existing section "repositories"
+
+    {
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+    }
+
+ 
+
+ADD TO EXISTING SECTION "EXTRA"
+----------------------
+
+    "installer-types": [
+        "npm-asset",
+        "bower-asset"
+    ]
+
+
+ADD TO EXISTING SECTION "INSTALLER-PATHS"
+----------------------
+ 
+        "web/libraries/{$name}": [
+            "type:drupal-library",
+            "type:npm-asset",
+            "type:bower-asset"
+        ] 
+        
+
+CUSTOM FOLDER INSTALL
+-------------
+
+in "extra" section right after "installer-paths" add
+
+"web/libraries/": ["npm-asset/ckeditor-wordcount-plugin"],
+
+
+INSTALL MODULE
+-------------
+
+via bower or npm preferably
+
+composer require bower-asset/leaflet:1.0.3
+composer require npm-asset/ckeditor-wordcount-plugin

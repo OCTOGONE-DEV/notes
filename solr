@@ -1,0 +1,156 @@
+/opt/solr-8.11.1/server/solr/orientation/conf
+
+/opt/solr-8.11.1
+/var/solr/data
+/var/solr/data/server/solr/configsets/orientation
+    
+sudo service solr stop
+sudo service solr start
+sudo service solr status
+
+# CREATE CORE
+cd /opt/solr-8.11.1/bin/
+solr create -c orientation
+
+
+# CHECK RUNNING
+
+name : orientation
+instancedir: server/solr/configsets/orientation
+dataDir: data
+config :solrconfig.xml
+schema : schema.xml
+
+# UPDATE SCHEMA
+go to core page and hit reload button
+http://orientationindex01dev.intranet.etnic.be:8983/solr/#/orientation/core-overview
+
+#CLEAR INDEX
+curl http://localhost:8983/solr/VW_PORTAIL_PE/update?commit=true -d  "<delete><query>*:*</query></delete>"
+
+# DELETE CORE
+cd /opt/solr-8.11.1/bin/
+bin/solr delete -c products_shard1_replica_n1
+bin/solr delete -c orientation_shard1_replica_n1
+bin/solr delete -c orientation2_shard1_replica_n1
+
+
+# REMOTE ACCES WRITER
+
+
+http://orientationindex01dev.intranet.etnic.be:8983/solr/VW_PORTAIL_ORIENTATION/select?q=ipod&fl=id,cat,name,popularity,price,score&wt=csv 
+
+http://orientationindex01dev.intranet.etnic.be:8983/solr/VW_PORTAIL_ORIENTATION/select?indent=true&q.op=OR&q=*%3A*&wt=csv 
+
+returns:
+
+
+
+# STOP 
+cd /opt/solr-8.11.1/bin/
+./solr stop -p 8984
+
+ /opt/solr/bin/solr stop -all
+ /opt/solr/bin/solr stop -p 8983
+ 
+# PK
+The primary key for the entity. It is optional, and required only when using delta-imports. It has no relation to the uniqueKey defined in schema.xml but they can both be the same.
+
+# ABORT
+curl "http://orientationindex01dev.intranet.etnic.be:8983/solr/orientation/dataimport?command=abort"
+
+# EXPORT
+curl "http://localhost:8983/solr/VW_PORTAIL_EPS_ACTE/select?q=*:*&wt=csv&indent=true"
+
+curl --negotiate -u : "http://localhost:8983/solr/orientation/select?q=*:*&wt=json&indent=true&rows=100000" >> /opt/solr-8.11.1/server/solr/orientation/export/collection_source.json
+
+curl --negotiate -u : "http://localhost:8983/solr/VW_PORTAIL_EPS_ACTE/select?q=*:*&wt=csv&indent=true&rows=100000" >> /opt/solr-8.11.1/server/solr/ORIENTATION/VW_PORTAIL_EPS_ACTE/export/VW_PORTAIL_EPS_ACTE.csv
+
+
+curl "http://localhost:8983/solr/orientation/export?q=my-query&sort=severity+desc,timestamp+desc&fl=severity,timestamp,msg"
+
+
+http://host:port/solr/coreName/select?q=*%3A*&fl=fieldA,fieldB&wt=json&indent=true
+
+# URL IMPORT
+http://orientationindex01dev.intranet.etnic.be:8983/solr/QT_STRUCTURES_AUTORISEES/select?indent=true&rows=250000&q.op=OR&q=*%3A*&wt=csv
+
+# SELECT
+SELECT 'VW_SIEL_LM_ENTITY_NAME' AS entity_type, NS_ETAB_ID
+
+http://orientationindex01dev.intranet.etnic.be:8983/solr/gettingstarted/select?fq=entity_type:VW_SIEL_LM_ENTITY_NAME
+
+# STATUS
+curl "http://localhost:8983/solr/orientation/dataimport?command=status"
+  
+# IMPORT
+curl "http://localhost:8983/solr/orientation/dataimport?command=full-import"
+
+curl "http://localhost:8983/solr/orientation/dataimport?command=full-import"
+
+# RELOAD CONFIG
+curl "http://localhost:8983/solr/#/orientation/dataimport//dataimport?command=reload-config"
+
+= = = = 
+
+# DIH MANUAL
+https://github.com/rohitbemax/dataimporthandler
+
+~ Create a products collection
+curl "http://localhost:8983/solr/admin/collections?action=CREATE&name=orientation2&numShards=1"
+
+~ Deploy package on the collection
+bin/solr package deploy data-import-handler -y -collections orientation2
+
+~ Add the configurations and reload the collection
+
+./server/scripts/cloud-scripts/zkcli.sh -z localhost:9983 -cmd putfile "/opt/solr-8.11.1/server/solr/orientation/conf/db-data-config-orientation.xml" db-data-config-orientation.xml
+
+
+curl "localhost:8983/solr/admin/collections?action=RELOAD&name=orientation"
+
+~ Run data import
+
+curl http://localhost:8983/solr/orientation/dataimport?command=full-import
+
+curl "http://localhost:8983/solr/orientation2/select?q=*:*"
+
+________________________________________________________________________________________
+
+
+curl "http://orientationindex01dev.intranet.etnic.be:8983/solr/admin/collections?action=CREATE&name=orientation&numShards=1"
+
+bin/solr package deploy data-import-handler -y -collections orientation
+
+-- Add the configurations and reload the collection
+
+
+
+
+denis crespin 
+
+
+
+/opt/solr-8.11.1/server/scripts/cloud-scripts/zkcli.sh -z orientationindex01dev.intranet.etnic.be:9983 -cmd putfile "/configs/products.AUTOCREATED/data-config.xml" data-config.xml
+
+
+
+# DELETE ALL CORE DATA
+http://orientationindex01dev.intranet.etnic.be:8983/solr/VW_PORTAIL_EPS_CATAE/update?stream.body=<delete><query>*:*</query></delete>&commit=true
+
+# DELETE INDEX
+./post -c orientation delete.xml 
+
+# TEST IMPORT VANILLIA
+cd /opt/solr-8.11.1/example/exampledocs
+java -jar -Dc=orientation post.jar *.xml
+
+# MySQL connector
+http://dev.mysql.com/downloads/connector/j/
+cd /opt/solr-8.11.1/contrib/dataimporthandler/lib
+copy jar file in taht folder
+
+
+/admin/cores?action=CREATE&name=portail_orientation&instanceDir=/opt/solr-8.11.1/instance&configSet=portail_orientation
+
+./server/scripts/cloud-scripts/zkcli.sh -z orientationindex01dev.intranet.etnic.be:9983 -cmd putfile "/configs/orientation.AUTOCREATED/data-config.xml" data-config.xml

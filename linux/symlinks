@@ -1,0 +1,5 @@
+# CREATE
+ln -s /path/to/file /path/to/symlink
+
+# CHANGE RIGHTS
+sudo chown -R myuser:mygroup link

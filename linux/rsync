@@ -1,0 +1,2 @@
+# efface les fichiers + vitesse transfert
+rsync -av --info=progress2 --delete-after /media-source /media-destination

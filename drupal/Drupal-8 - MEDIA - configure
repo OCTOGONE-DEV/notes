@@ -1,0 +1,10 @@
+# MODULE
+     entity_browser
+     dropzonejs_eb_widget
+     entity_browser_enhanced
+     inline_entity_form
+     entity_browser_entity_form
+ 
+    ~ Social media
+        https://www.drupal.org/project/media_entity_instagram
+        https://www.drupal.org/project/media_entity_pinterest

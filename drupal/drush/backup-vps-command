@@ -1,0 +1,18 @@
+cd ~/websites/sandbox/web
+drush archive-dump default --destination=/home/greg/backup/sandbox/sandbox.tar.gz
+
+cd ~/websites/ares/web
+drush archive-dump default --destination=/home/greg/backup/ares/ares.tar.gz
+
+cd ~/websites/bootstrap-for-drupal/web
+drush archive-dump default --destination=/home/greg/backup/bootstrap-for-drupal/bootstrap-for-drupal.tar.gz
+
+cd ~/websites/octogone/web
+drush archive-dump default --destination=/home/greg/backup/octogone/octogone.tar.gz
+
+cd ~/websites/paradigmes/web
+drush archive-dump default --destination=/home/greg/backup/paradigmes/paradigmes.tar.gz
+ 
+ 
+ composer require drush/drush:9.7.2
+

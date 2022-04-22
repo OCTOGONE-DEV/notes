@@ -1,0 +1,9 @@
+# AUTO SKU
+to disable before import
+install auto sku and configure token in product ype  for eahc product type
+
+# CREDIT CARD
+    commerce: enregistrer numero carte de credit dans settings .phpp
+    
+# MODULE
+    https://www.drupal.org/project/mailchimp_ecommerce

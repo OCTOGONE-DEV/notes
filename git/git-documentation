@@ -1,0 +1,65 @@
+
+  I think your basic issue here is that you're misinterpreting and/or misunderstanding what git does and why it does it.
+  
+  When you clone some other repository, git makes a copy of whatever is "over there". It also takes "their" branch labels, such as master, and makes a copy of that label whose "full name" in your git tree is (normally) remotes/origin/master (but in your case, remotes/upstream/master). Most of the time you get to omit the remotes/ part too, so you can refer to that original copy as upstream/master.
+  
+  If you now make and commit some change(s) to some file(s), you're the only one with those changes. Meanwhile other people may use the original repository (from which you made your clone) to make other clones and change those clones. They are the only ones with their changes, of course. Eventually though, someone may have changes they send back to the original owner (via "push" or patches or whatever).
+  
+  The git pull command is mostly just shorthand for git fetch followed by git merge. This is important because it means you need to understand what those two operations actually do.
+  
+  The git fetch command says to go back to wherever you cloned from (or have otherwise set up as a place to fetch from) and find "new stuff someone else added or changed or removed". Those changes are copied over and applied to your copy of what you got from them earlier. They are not applied to your own work, only to theirs.
+  
+  The git merge command is more complicated and is where you are going awry. What it does, oversimplified a bit, is compare "what you changed in your copy" to "changes you fetched from someone-else and thus got added to your-copy-of-the-someone-else's-work". If your changes and their changes don't seem to conflict, the merge operation mushes them together and gives you a "merge commit" that ties your development and their development together (though there is a very common "easy" case in which you have no changes and you get a "fast forward").
+  
+  The situation you're encountering now is one in which you have made changes and committed them—nine times, in fact, hence the "ahead 9"—and they have made no changes. So, fetch dutifully fetches nothing, and then merge takes their lack-of-changes and also does nothing.
+  
+  What you want is to look at, or maybe even "reset" to, "their" version of the code.
+  
+  If you merely want to look at it, you can simply check out that version:
+
+# NOTE GIT SUCCINTLY
+
+  As an alternative to git init, you can clone an existing Git repository using the
+  following command: git clone ssh://<user>@<host>/path/to/repo.git
+    
+  To add new or modified files from the working directory to the staging area, use
+  the following command:
+    git add <file>
+  To delete a file from a project, you need to add it to the staging area just like a
+  new or modified file. The next command will stage the deletion and stop tracking
+  the file, but it won’t delete the file from the working directory:
+    git rm --cached <file>
+  
+~ Generating Diffs
+  If you need more detailed information about the changes in your working
+  directory or staging area, you can generate a diff with the following command:
+    git diff
+  This outputs a diff of every unstaged change in your working directory. You can
+  also generate a diff of all staged changes with the --cached flag:
+    git diff –cached
+  Note that the project history is outside the scope of git status. For displaying
+  committed snapshots, you’ll need git log.
+  
+~ Commits
+  Commits represent every saved version of a project, which makes them the
+  atomic unit of Git-based version control. Each commit contains a snapshot of the
+  project, your user information, the date, a commit message, and an SHA-1
+  checksum of its entire contents:
+    commit b650e3bd831aba05fa62d6f6d064e7ca02b5ee1b
+    Author: john <john@example.com>
+    Date: Wed Jan 11 00:45:10 2012 -0600
+    Some commit message
+  This checksum serves as a commit’s unique ID, and it also means that a commit
+  will never be corrupted or unintentionally altered without Git knowing about it.
+  Since the staging area already contains the desired changeset, committing
+  doesn’t require any involvement from the working directory.
+  
+~ Tagging Commits
+  Tags are simple pointers to commits, and they are incredibly useful for
+  bookmarking important revisions like public releases. The git tag command
+  can be used to create a new tag:
+    git tag -a v1.0 -m "Stable release"
+  The -a option tells Git to create an annotated tag, which lets you record a
+  message along with it (specified with -m).
+  Running the same command without arguments will list your existing tags:
+    git tag

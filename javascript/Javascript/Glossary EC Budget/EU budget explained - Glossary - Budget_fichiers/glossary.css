@@ -1,0 +1,133 @@
+/* CSS Document */
+.addGlossary{}
+#alphaList li{
+	display:inline;
+	list-style-image:none;
+	margin-right:8px;
+		
+}
+#alphaList li {
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#999;
+}
+span.alt{
+	display:none;	
+}
+/*
+h2{
+	width:630px;
+}*/
+.definition{
+	margin-left:20px;
+	margin-right:20px;		
+}
+.mentioned{
+	float:right;
+}
+
+/*Jquery tabs*/
+
+.ui-tabs {
+ position: relative;
+ padding: .2em;
+ zoom: 1;
+ } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav {
+ margin: 0;
+ padding: .2em .2em 0;
+ }
+.ui-tabs .ui-tabs-nav li {
+ list-style: none;
+ float: left;
+ position: relative;
+ margin: 0 .2em .2em 0;
+ border-bottom: 0 !important;
+ padding: 0;
+ white-space: nowrap;
+ width:35px;
+ height:35px;
+ display:inline-block;
+ text-align:center;
+ background-color:#E6E6E6;
+ text-align:center;
+ line-height:2.2em;
+ color:#CCCCCC;
+ }
+ 
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected{
+    background-color: #0065A2;
+    color:#fff;
+ 
+ }
+ 
+.ui-tabs .ui-tabs-nav li:hover a {
+    background-color: #0065A2;
+    color:#fff;
+    -webkit-transition: background-color 250ms linear;
+    -moz-transition: background-color 250ms linear;
+    -o-transition: background-color 250ms linear;
+    -ms-transition: background-color 250ms linear;
+    transition: background-color 250ms linear;
+ }
+ 
+.ui-tabs .ui-tabs-nav li a {
+ width:35px;
+ height:35px;
+ display:inline-block;
+ text-decoration: none;
+ text-align:center;
+ line-height:2.2em;
+ }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+ cursor: text;
+ }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+ cursor: pointer;
+ } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel {
+ display: block;
+ border-width: 0;
+ margin-left:3px;
+ background: none;
+ }
+.ui-tabs .ui-tabs-hide {
+ display: none !important;
+ }
+
+#glossaryIndex{
+  width:100%;
+  margin-bottom:25px;
+  z-index:10;
+  background:#fff;
+  }
+
+.glossaryTerm{
+  border:1px solid #E6E6E6;
+  margin-bottom:20px;
+  padding:5px 20px 20px 20px;
+  width:95%;
+  height:100%;
+  position:relative;
+  }
+
+.glossaryTerm h3::first-letter{
+  text-transform: uppercase;
+  
+  }
+.glossary-top{
+  bottom:0;
+  right:0;
+  position:absolute;
+  background-color:#0065a2;
+  background-image:url(../img/top-glossary.png);
+  background-repeat:no-repeat;
+  background-position:  85% 50%;
+  padding:2px 25px 2px 10px ;
+  }
+.glossary-top a{
+  text-decoration:none;
+  color:#fff;
+  font-size:0.75em;
+  }

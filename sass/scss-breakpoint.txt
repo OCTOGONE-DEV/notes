@@ -1,0 +1,93 @@
+/* = = = = = = MOBILE FIRST - BASE/BUTTONS.SCSS  = = = = = = = = = = = = = =  /
+/  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+@charset "UTF-8";
+@include orientation(landscape) {}
+/* = = = = = = = = = = = = = = = = = = = = = ROOT RULES EXTRA SMALL  = = = = */
+@include media-breakpoint-up(xs) {
+}
+/* = = = = = = = = = = = = = = = = = = = = = BREAKPOINT VERY SMALL = = = = = */
+@include media-breakpoint-up(vs) {
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = BREAKPOINT SMALL  = = = = = = = */
+@include media-breakpoint-up(sm) {
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = BREAKPOINT MEDIUM = = = = = = = */
+@include media-breakpoint-up(md) {
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = BREAKPOINT LARGE  = = = = = = = */
+@include media-breakpoint-up(lg) {
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = BREAKPOINT EXTRA LARGE  = = = = */
+@include media-breakpoint-up(xl) {
+}
+
+
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+/* = = = = = = = = = = LAYOUTS/NAVBAR-MAIN.SCSS= = = = = = = = = = = = = = = = = = = = = = = = = = = = /
+/   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+@charset "UTF-8";
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ROOT RULES - MOBILE FIRST= = = */
+
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT SMALL ≥ 576PX = = = */
+@media all and (min-width: 34em) and (max-width: 47em) {
+
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT MEDIUM ≥ 768PX = = = */
+@media all and (min-width: 48em) and (max-width: 61em) {
+
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT LARGE ≥ 992PX = = = */
+@media all and (min-width: 62em) and (max-width: 74em) {
+
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT EXTRA LARGE ≥1200PX = = = */
+@media all and (min-width: 75em) {
+
+}
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+/* = = = = = = = = = = LAYOUTS/NAVBAR-MAIN.SCSS= = = = = = = = = = = = = = = = = = = = = = = = = = = = /
+/   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+@charset "UTF-8";
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ROOT RULES - MOBILE FIRST= = = */
+
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT SMALL ≥ 576PX = = = */
+@media (min-width: 576px) {
+
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT MEDIUM ≥ 768PX = = = */
+@media (min-width: 768px) {
+
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT LARGE ≥ 992PX = = = */
+@media (min-width: 992px) {
+
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT EXTRA LARGE ≥1200PX = = = */
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,36 @@
+#SHIFT BRANCH
+git flow  feature checkout story72
+git flow  feature checkout multimedia-player
+
+git checkout develop
+
+# CREATE BRANCH
+git flow feature start multimedia-player
+git flow publish menu_FWB === push local vers distant
+git flow feature finish 
+
+menu_FWB
+
+
+git pull origin develop
+git merge develop
+... ici tu résoud les conflits avec ce qui a été poussé depuis le debut de ta branche
+git add -Av
+git commit -m "........"
+git flow feature finish story72
+
+
+# PROCEDURE POUR MERGE
+1) git merge develop
+    merge develop
+2) drush cex
+    export config
+3) git publish story72
+    equivalent git push
+4) git flow feature finish story72
+    fait dsparaitre branche local et distante et merge dans develop
+
+
+Salut,
+la feature du lecteru vidéo est publiée sur le HUB, je ne la ferme pas avant le retour de l'équipe sur d'éventuelles modifications.
+

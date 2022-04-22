@@ -1,0 +1,14 @@
+# MODULE
+    https://www.drupal.org/project/default_content
+    https://www.drupal.org/project/default_content_set
+    https://www.drupal.org/project/default_content_deploy
+    https://www.drupal.org/project/file_entity
+    https://www.drupal.org/project/better_normalizers
+
+# DRUSH CONFIG
+    First :
+        composer require drupal/default_content
+        composer require drupal/default_content_set
+
+# COMMAND
+    default-content-set:export dc_generic_content

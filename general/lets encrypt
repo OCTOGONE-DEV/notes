@@ -1,0 +1,51 @@
+# INSTALL
+    sudo apt-get update
+    sudo apt-get install software-properties-common
+    sudo add-apt-repository universe
+    sudo add-apt-repository ppa:certbot/certbot
+    sudo apt-get update
+    sudo apt-get install certbot python-certbot-apache 
+
+# Multi domain
+    sudo certbot --apache -d octogone.dev -d www.octogone.dev -d stats.octogone.dev -d sec.octogone.dev -d tmp.octogone.dev -d support.octogone.dev 
+    sudo certbot --apache -d octogone-it.be -d www.octogone-it.be
+    sudo certbot --apache -d revelation-ares.be -d www.revelation-ares.be -d sec.revelation-ares.be -d stats.revelation-ares.be
+    sudo certbot --apache -d paradigmes.tv -d www.paradigmes.tv -d sec.paradigmes.tv -d stats.paradigmes.tv
+    sudo certbot --apache -d risc.tv -d www.risc.tv 
+    
+    sudo certbot --apache -d sandbox.octogone.dev
+     sudo certbot --apache -d patate.be -d www.patate.be
+    
+sudo cp octogone.dev.conf paradigmes.tv.conf
+sudo cp sec.octogone.dev.conf sec.paradigmes.tv.conf
+sudo cp stats.octogone.dev.conf stats.paradigmes.tv.conf
+    
+sudo a2ensite stats.paradigmes.tv.conf
+sudo a2ensite sec.paradigmes.tv.conf
+sudo a2ensite paradigmes.tv.conf
+
+sudo vi ~/websites/octogone/web/sites/default/settings.php
+
+chown -R www-data:www-data /home/greg/websites/paradigmes/matomo
+sudo chmod -R 0755 /home/greg/websites/paradigmes/matomo/tmp
+sudo chmod -R 0755 /home/greg/websites/paradigmes/matomo/tmp/assets/
+sudo chmod -R 0755 /home/greg/websites/paradigmes/matomo/tmp/cache/
+sudo chmod -R 0755 /home/greg/websites/paradigmes/matomo/tmp/logs/
+sudo chmod -R 0755 /home/greg/websites/paradigmes/matomo/tmp/tcpdf/
+sudo chmod -R 0755 /home/greg/websites/paradigmes/matomo/tmp/templates_c/
+
+
+ $settings['trusted_host_patterns'] = array(
+   '^paradigmes\.tv$',
+     '^sec\.paradigmes\.tv$',
+     '^www\.paradigmes\.tv$',
+ );
+
+
+    # DELETE CERTIFICATE
+        sudo certbot delete
+        adresse c-name par defaut de www =         webredir.vip.gandi.net.
+        
+        sudo certbot delete --cert-name sandbox.octogone.dev
+        
+         -d sec.revelation-ares.be -d stats.revelation-ares.be

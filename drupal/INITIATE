@@ -1,0 +1,18 @@
+Create drupal instance localy and on vps
+    define provate and tmp files  in seetings.php : 
+$settings['file_private_path'] = '/home/greg/paradigmes/private-files';
+ Check it at  /admin/config/media/file-system
+iframe video embeded : /admin/config/media/media-settings
+check board repoort
+drush init
+git init
+Redirect domain name to VPS
+create certificate ssh
+matomo config
+favcion config
+social share config
+Mailchimp config
+Change nom site dans declaration coockies
+rename backuop-migrate file  + schedule + ivate filles 
+Please install the Defuse PHP-encryption library via Composer to be able to encrypt backup files.
+

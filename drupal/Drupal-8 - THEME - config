@@ -1,0 +1,278 @@
+OK//comment block to style: séparer commentaire du formulaire
+OK// include twig
+OK// page login
+OK//comment block to style: séparer commentaire du formulaire
+OK// include twig
+OK// tick checkbox bug
+OK// style : Ajouter un commentaire en dessous de article
+OK// main nav hover remove animation border bottom for active element
+OK// pager
+OK// style image files into nod : float, responsive
+
+---mercredi
+nav additional center on moblie menu
+
+--- jeudi
+OK // style étiquette 
+OK  // local task mobile conent justify around
+OK // icon pour les different type de message.
+OK // redo icon aside content
+OK // (no bug, just no content) search page + no sticky aside on that page? 
+OK // home page box style
+OK // redo icon aside content
+OK // form contact
+OK // style all input element : checkbox 
+OK // auto add icon in first box footer
+OK // wrong sicial media icon size
+OK // adde id to comment title.
+OK // restyle home page
+OK // user image , user page
+OK // order  bock in aside content
+image in content node make it float
+
+//vendredi
+tuning form ares
+htaccess/thpasswd for dev website 
+redo nav main : reorga scss
+clean SCSS
+
+//samedi
+redo nav main : reorga scss
+icon titre page taxonomy
+page search finie tunning
+responsive video
+page resultat recherche : lien aide
+password protect apache ok
+install prod version to test, some bug
+prod: input search affiche pas en mode logedin????
+page search without test send to a bugged page
+clean TPL twig 
+redo drupal link footer
+create paymeacoffee account
+gulp file : auto prefixer , finc sophisticated solution
+check logo and height 40px;
+button page search (pas fini)
+
+//dimanche
+print (pas fini)
+bug margin negatif pour header dans chrome ::: lien incliquable (solution : enlever margin-top)
+remove rss feed icon?
+contextula links mees up ( icon in it? main navigation margin top)
+downloaded social icon 
+offseet anchor
+
+// lundi
+boostrap class modif in static tpl
+text-decoration underline for links
+comment form form-item-comment-body-0-format margin
+print version ok
+impossible de dev print avec firefox??
+print-class felx or block? 
+test print table
+
+// mardi
+redo all icons...
+svg before mal aligné dans chrome?
+alignement logo 
+not overwrite bg-dark class, change the css
+icon menu mobile no display
+icon search mobile no display
+size icon add mobile
+tooltip
+popover
+modal
+button page search mobile
+main nav voir comporte si beaucoup element  problem with multi line 
+mark tag on  opera /chrome + mark with padding display without content
+SCCS footer mofify "i" tag because no fontawesome
+list bullet style, vertical align? change solution?
+capitalize logo
+mibole menu open  create  margin right
+fine tunning
+not same police  outside my computer
+reduire taille titre en mobiles 
+
+//mercredi
+debug mobile menu................
+non sticky navbar on mobile landscape
+bug mobile image + no sticky bar.
+linl no underscore breadxrumbs, test foot full content
+icon search landsacpe mobile
+readme.md
+
+// FAIT 
+style nombre de vue de la page
+page 403 404
+forum XS make it wider
+meta node result in search page  = decrese font size
+selected text color to $primary
+style nombre de vue de la page
+regression: manque icon tag page taxo
+
+-DEV 
+icon masquerade module dans user account
+index taxo page, parfois tag au dessus ou en dessous du tirre?
+make searchfiled+button a form group in page search
+dropup/dropdown manguage menu for mobile not workong , recheck css. 
+icon masquerade module dans user account
+form reply 
+page activity - table
+underline main menu no display in LG screeen
+Inline Form Errors
+icon book link
+check si page condition pour native block
+style content when worklof acitvated ( meta moderation state box to style))
+margin comment form mobile
+style box reply comment form
+scrolling anchor to disable + proper offset when toolbar.
+style blog, forum all desactived module
+couleur titre footer page search
+alignement croix no result search
+add path auto au cuggestion
+aaply style to all type of image type in node content
+make demo site
+animated gif for main nav, language menu, mobile menu
+renmae scss according to folder
+svg icon for windows edge: remove core or continue testing
+border left fo reply comment
+colored marker list non firefox browser
+more margin for ul/OL
+test all type element
+meta mobile
+sire header /list on mobile
+remove text backgorund for ieedge dans scss sub-footer
+
+chercher twig template for more granularity for region block
+SCSS pultiple first level selector
+tpl bs.dev boottrap dyna comp; mettre bouton pour modal
+mark tag on  opera /chrome + mark with padding display without content
+mettre icon "+" avant node__links 
+close X dans alert libe-heoght:.75rem; ( corrected but bugged on firefox)
+increase font-size n mobile menu
+css comb
+check twig extend 
+clean TPL twig 
+test comment
+auto add id to H1, etc... with twig template?  
+search page mobile
+
+
+-BUG
+input-file css style hover no transition , no cursor
+search mobile menu
+main nav voir comporte si beaucoup element  problem with multi line 
+cant copy text on mobile
+small space with modal region when logged in
+aside content overlap navbar on mobile
+quand mobile menu ouvert et scrooll le menu se deplace un peu vers le haut
+
+- TWIG
+section bug tag dans page tpl-twig
+
+-CSS
+theme/font theme css + theme
+bug border bottom main nav si active element dans nav
+icon content-aside
+nettoyer CSS comment
+language menu dropdwon animation 
+
+# THEME NAME
+# THEME NAME
+bootstrap native
+Colorfull
+Techno 
+Fresh white
+Blue Sky
+Bright Accent
+Young Forest
+Stylish
+Contemporary
+Creative
+bdloob life
+
+# FREE THEME
+language switche menu wit flag
+3 space for content in the footer
+stiky side bar
+comment fully stylised
++ 3 more in the sub footer
+all native Druapl block are placed after installation and stylized
+all native page are stilized
+multiple elegant color/font option for the theme
+footer and subfooter stylized
+use of SVG icons
+pagination stylized
+sophiticated header with
+    Logo, slogan and site name build responsyvaly
+    animated dropdown
+    sticky main navigation
+    elegant dynamic search bar
+    elegant icon in the navigation for user menu, contact page, rss feed, language switch
+
+# For developer
+all SCSS file are provided
+advanced bootsrrap variable  overwrite SCSS file
+maximum bootstrap integration into the theme
+
+ # THEME PAYANT
+ SCSS of color theme
+ full typographie modèle page
+static and dynamic bootstrap components with one cick copy code
+static and dynamic custom components with one cick copy code
+ page that list all the bootstrap class 
+ dynamic scrollspy
+top  up/down arrow
+proper config o the RSS feed
+2 more animation effect for the serach bar
+acces to a module to create all content and block generic
+all language (thus flag) supported in the language selection menu
+all form element bootstrap stylized
+css animation file
+
+
+
+# alert class box to add icon to H2
+ alert-success
+  alert-danger
+  
+ # INPUT STYLE
+ theme modele : Claro 8, bario
+  
+  
+ # BLOCK TO ACTIVATE
+ 22 BLOCK FROM A FRESH INSTALL
+ 
+Commentaires récents 	 // OK  
+Contenu récent : Bloc   // OK  
+Utilisateurs en ligne  // OK  
+Administration // OK  
+Raccourcis // OK  
+Tools  // OK  
+Sélecteur de langue  // OK  
+Nouveaux membres   // OK   
+
+ // OK  Powered by Drupal
+ // OK  Syndiquer
+ // OK  Breadcrumbs
+ // OK  Main page content
+ // OK  User account menu
+ // OK  Footer
+ // OK  Main navigation
+ // OK  Search form	
+ // OK  Help 
+ // OK  Page title
+ // OK  Primary admin actions
+ // OK  Messages
+ // OK  Tabs
+  // NO USE  Site branding
+  // NO USE  User login	
+  
+  // OK   syndiquer
+   // OK    administration
+// OK   views_block__comments_recent_block_1
+// OK    views_block__content_recent_block_1
+// OK    views_block__who_s_new_block_1
+ // OK   raccourcis
+ // OK  selecteurdelangue
+ // OK   tools
+  // OK     views_block__who_s_online_who_s_online_block 

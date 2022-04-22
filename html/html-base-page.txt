@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Base HTML page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <style></style>
+    <script></script>
+    <div>
+      <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Vivamus <a href="#" target="_blank">vestibulum efficitur eros</a> nec finibus. Etiam ornare, <i>dolor eget ultrices mattis</i>, nunc nisi placerat nunc, ac congue mi
+        nibh in orci. Curabitur id est diam. Duis vitae ligula orci. Ut non mauris ac diam fermentum rhoncus. Praesent dignissim sed neque non finibus. Phasellus est massa, bibendum sit amet pretium sit amet, sagittis eu orci. Donec consequat cursus
+        purus in iaculis. Vestibulum nisi dolor, congue auctor orci ac, accumsan scelerisque ante. Donec faucibus fringilla fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque mauris, dignissim vitae convallis at,
+        ultrices ac enim. Vestibulum non luctus arcu, a sodales neque. Etiam porttitor vel tellus in euismod. Sed ornare, mauris vitae convallis ullamcorper, neque risus vestibulum ipsum, nec rhoncus leo lorem nec purus.</p>
+    </div>
+  </body>
+
+</html>

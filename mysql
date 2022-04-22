@@ -1,0 +1,4 @@
+sed -i 's/utf8mb4_0900_ai_ci/utf8_general_ci/g' DB_backup_CLEANING_SEARCH_API-2022-04-13T12-32-40_MID_DAY_NEW_CONF.sql
+
+sed -i 's/utf8mb4/utf8/g' DB_backup_CLEANING_SEARCH_API-2022-04-13T12-32-40_MID_DAY_NEW_CONF.sql
+

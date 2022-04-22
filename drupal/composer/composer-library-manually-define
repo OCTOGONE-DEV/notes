@@ -1,0 +1,73 @@
+COMPOSER REQUIRE
+-------------
+
+composer require oomphinc/composer-installers-extender
+
+
+ADD TO EXISTING SECTION "REPOSITORIES"
+---------------
+
+   {
+        "type": "package",
+        "package": {
+            "name": "ckeditor-plugin/wordcount",
+            "version": "master",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://github.com/w8tcha/CKEditor-WordCount-Plugin/archive/master.zip",
+                "type": "zip"
+            }
+        }
+    },
+
+   {
+        "type": "package",
+        "package": {
+            "name": "desandro/masonry",
+            "version": "master",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://github.com/desandro/masonry/archive/master.zip",
+                "type": "zip"
+            }
+        }
+    },
+   {
+        "type": "package",
+        "package": {
+            "name": "ckeditor-plugin/colorbutton",
+            "version": "master",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://download.ckeditor.com/colorbutton/releases/colorbutton_4.14.0.zip",
+                "type": "zip"
+            }
+        }
+    },
+
+   {
+        "type": "package",
+        "package": {
+            "name": "ckeditor-plugin/panelbutton",
+            "version": "master",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://download.ckeditor.com/panelbutton/releases/panelbutton_4.14.0.zip",
+                "type": "zip"
+            }
+        }
+    }
+
+CUSTOM FOLDER INSTALL
+-------------
+
+in "extra" section right after "installer-paths" add
+
+"web/libraries/ckeditor/plugins/{$name}": ["vendor:ckeditor-plugin"],
+
+
+INSTALL MODULE
+-------------
+
+it is also needed to install the module: 
+    composer require ckeditor-plugin/templates

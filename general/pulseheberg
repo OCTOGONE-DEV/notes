@@ -1,0 +1,59 @@
+ns0.pulseheberg.net
+ns1.pulseheberg.net
+
+pas de page achat nom de domaine direct sur le site
+changer premium en premier sur la hp
+plan etudiant pas visible dans espace client
+mettre en avant les snpashiot gratuit, ca outte 10€ mois chez ovh
+
+sudo apt-get install lamp-server^
+sudo apt-get install phpmyadmin
+sudo apt-get install vsftpd
+adduser greg
+# make a user sudo
+    usermod -aG sudo greg
+ # add user to mysql
+    sudo mysql
+    CREATE USER 'greg'@'localhost' IDENTIFIED BY 'ZSXiop++--';
+    GRANT ALL PRIVILEGES ON * . * TO 'greg'@'localhost';
+    sudo vi /etc/php/7.2/apache2/php.ini
+
+# apache 2 config
+    sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/silouane.conf
+    sudo rm /etc/apache2/sites-available/000-default.conf
+    sudo vi /etc/apache2/sites-available/silouane.conf
+    sudo service apache2 restart
+    sudo a2ensite silouane.conf
+    sudo service apache2 restart
+    sudo a2dissite 000-default.conf
+    
+    sudo vi /etc/apache2/apache2.conf 
+<Directory /home/greg/silouane>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+        Order allow,deny
+        Allow from all
+</Directory>
+    sudo service apache2 restart
+    
+sudo a2enmod rewrite
+    sudo service apache2 restart
+
+# php.ini config
+sudo vi /etc/php/7.0/apache2/php.ini
+        post_max_size
+        upload_max_filesize
+        max_file_uploads
+    sudo service apache2 restart
+
+# Config Firewall
+sudo ufw enable
+sudo ufw allow 22
+
+# resolve arrow bug in vi
+    vi ~/.vimrc
+    set nocompatible
+    
+    https://makina-corpus.com/blog/metier/2016/mon-site-est-trop-lent-que-faire
+    time curl -I http://192.0.2.42

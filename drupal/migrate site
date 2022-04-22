@@ -1,0 +1,24 @@
+# mailchimp
+    reconfigure block with correct mailling list   
+    change api key
+    Check form qsuscription
+    momdifier url rss dans template maiclhimp
+# Matomo
+
+#metatag
+test metatag facebook, twitter, google+
+
+# TASK
+    check /admin/reports/status
+    update.php
+    settings.php
+    desactivate devel
+    cache/agregation    /admin/config/development/performance
+    définir trusted_host_patterns
+    changer mot de passe
+    
+# SERVER CONFIG
+    full https
+    
+# MAKE APACHE OWNER OF FILES FOLDER 
+    chgrp -R www-data files

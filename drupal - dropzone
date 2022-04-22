@@ -1,0 +1,4 @@
+problem with cloud and bulk upload:
+in dropzonejs.settings.yml
+add tmp_upload_scheme: public
+

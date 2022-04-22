@@ -1,0 +1,15 @@
+# SERVER WEB DRUPAL CONSOLE
+    
+# INSTALL DRUPAL
+    drupal site:install
+    
+# SERVER WEB DRUPAL CONSOLE
+
+# INSTALL DRUPAL
+
+# LIST VARIABLE
+    drupal config:debug
+    drupal config:debug system.site
+
+# MODIFY VARIABLE
+    drupal config:edit system.site

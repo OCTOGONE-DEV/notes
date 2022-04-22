@@ -1,0 +1,4 @@
+# unmount first ! 
+sudo umount /dev/sdb1
+
+sudo dosfsck -a /dev/sdb1

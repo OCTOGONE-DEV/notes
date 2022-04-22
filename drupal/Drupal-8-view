@@ -1,0 +1,4 @@
+# Base to remove markup
+    Format / show seetings : uncheck "Provide default field wrapper elements"
+    Format / Format seetings : uncheck " Add views row classes"
+    Fields or content / Style settings : uncheck "Add default classes"
