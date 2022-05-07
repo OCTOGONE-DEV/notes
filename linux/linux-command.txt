@@ -25,6 +25,9 @@
   date                                 Check system time
   watch file in real time   sudo tail -f fileNamE
 
+# restart cinnamon
+ctrl+alt+esc
+
 # NETWORK
     edit hostfile sudo vi /etc/hosts
     edit hostname vi /etc/hostname

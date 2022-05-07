@@ -1,6 +1,7 @@
 # INSTALL NODE JS IN PROJECT
     npm init
     npm install gulp
+    npm install gulp-cli
     npm install gulp-sass
     npm install gulp-ruby-sass
     npm install gulp-watch-sass

@@ -1,0 +1,2 @@
+# restart network manager
+sudo systemctl restart NetworkManager

@@ -30,9 +30,15 @@ DRUPAL CORE
 # check update
     drush ups
 
+# FEEDS IMPORT
+drush feeds:import-all QT_STRUCTURES_AUTORISEES__TAXO
+
 # config import
     drush cim
-    
+
+# delete term taxo
+ddev drush entity:delete taxonomy_term --bundle=second__enseign_et_etabli
+
 # config export
     drush cex
 
@@ -67,6 +73,12 @@ drush entity:delete paragraph --bundle="specialities"
 # maintenance momde MODE
     drush sset system.maintenance_mode 1
     
+# UUID
+get 
+  drush config-get "system.site" uuid
+set
+  drush cset system.site uuid d454a9a0-0e27-4293-870d-e36aab03bbcf -y
+
 MODULE
 ---------
 
@@ -88,9 +100,8 @@ MODULE
 # update all module except core 
     drush pm-update --no-core
 
-# DELETE ALL NODE
-drush entity:delete enseign_superieur --bundle=application
-drush entity:delete node --bundle=enseign_secondaire
+# DELETE ALL NODE 
+drush entity:delete node --bundle=enseignement_secondaire
     
     
 # DELTE ALL TERM VOCABULARY
@@ -102,6 +113,20 @@ drush entity:delete node --bundle=enseign_secondaire
     Click Submit
 
 
+SEARCH API
+---------
+# CLEAR
+drush search-api:clear
+
+# INDEX
+drush search-api:index
+
+# RESET TRACKER
+drush search-api:reset-tracker
+
+# RESET TRACKER
+drush search-api-reindex
+
 THEME
 ---------
 
@@ -109,8 +134,15 @@ THEME
     drush theme:enable ThEmE_NamE
     drush config-set system.theme default ThEmE_NamE
  
- BACKUP/RESTORE
-----------------
+BACKUP/RESTORE
+--------
+# FEEDS
+import with the ID of the feeds
+drush feeds:import 61
+
+
+#DROP DB
+drush sql-drop
 
 # backup
     OK: 

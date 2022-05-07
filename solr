@@ -8,6 +8,14 @@ sudo service solr stop
 sudo service solr start
 sudo service solr status
 
+# URL QUERY
+~ single value field
+http://orientationindex01dev.intranet.etnic.be:8983/solr/VW_PORTAIL_SO_DGSP/select?q=FOR_OBJ_ID:40&indent=true&rows=100000&wt=csv
+
+~ Multiple value field
+http://orientationindex01dev.intranet.etnic.be:8983/solr/VW_PORTAIL_SO_DGSP/select?q=FOR_OBJ_ID:40%0AFOR_OBJ_ID:41&indent=true&rows=100000&wt=csv
+
+
 # CREATE CORE
 cd /opt/solr-8.11.1/bin/
 solr create -c orientation
@@ -26,7 +34,7 @@ go to core page and hit reload button
 http://orientationindex01dev.intranet.etnic.be:8983/solr/#/orientation/core-overview
 
 #CLEAR INDEX
-curl http://localhost:8983/solr/VW_PORTAIL_PE/update?commit=true -d  "<delete><query>*:*</query></delete>"
+curl http://localhost:8983/solr/VW_PORTAIL_EPS_UNIE/update?commit=true -d  "<delete><query>*:*</query></delete>"
 
 # DELETE CORE
 cd /opt/solr-8.11.1/bin/
@@ -57,7 +65,7 @@ cd /opt/solr-8.11.1/bin/
 The primary key for the entity. It is optional, and required only when using delta-imports. It has no relation to the uniqueKey defined in schema.xml but they can both be the same.
 
 # ABORT
-curl "http://orientationindex01dev.intranet.etnic.be:8983/solr/orientation/dataimport?command=abort"
+curl "http://orientationindex01dev.intranet.etnic.be:8983/solr/SECOND_ENSEIGN_ETAB/dataimport?command=abort"
 
 # EXPORT
 curl "http://localhost:8983/solr/VW_PORTAIL_EPS_ACTE/select?q=*:*&wt=csv&indent=true"
