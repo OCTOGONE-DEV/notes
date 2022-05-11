@@ -138,7 +138,7 @@ BACKUP/RESTORE
 --------
 # FEEDS
 import with the ID of the feeds
-drush feeds:import 61
+ drush feeds:import 61
 
 
 #DROP DB

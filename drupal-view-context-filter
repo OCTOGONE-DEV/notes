@@ -1,0 +1,3 @@
+# by content type
+$node = node_load(arg(1)); echo $node->type;
+https://drupal.stackexchange.com/questions/53861/how-to-show-nodes-of-a-content-type-using-contextual-filters-as-filters
