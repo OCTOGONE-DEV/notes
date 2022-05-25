@@ -1,0 +1,3 @@
+# The Linux system users can use sed command to replace text in file directly.
+sed -i 's/utf8mb4_0900_ai_ci/utf8_general_ci/g' DB_backup_AFTER_CLEANING-2022-05-12T21-37-26.mysql
+sed -i 's/CHARSET=utf8mb4/CHARSET=utf8/g' DB_backup_AFTER_CLEANING-2022-05-12T21-37-26.mysql

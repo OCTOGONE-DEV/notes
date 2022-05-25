@@ -1,7 +1,10 @@
  # SERVER COMMAND
   restart server                           sudo reboot
   shut-down server                     sudo poweroff
-  restart network                        config sudo /etc/init.d/./networking restart
+    restart network                        config sudo /etc/init.d/./networking restart 
+                                            nmcli networking off
+                                            nmcli networking on
+
   network info                              ifconfig
   reconfigure keyboard               dpkg-reconfigure keyboard-configuration
   Install software                          sudo apt-get   install toto-software
@@ -109,14 +112,14 @@ change symlink DEST / SYMLINK NAME
 # users and groups
   Add group			sudo addgroup totogang
   list all group		compgen -g
-  list group member		getent group totogang
+  list group member		getent group s
   list group of the member  id
   see user home         getent passwd louis-marie
   list all user			compgen -u
   Add user			useradd  toto
   del user   sudo deluser toto
   shift user			su toto 
-  add user to group		sudo adduser greggroup www-data-user
+  add user to group		sudo adduser greggroup devrgr01
   Add group			groupadd totogroup
   add user and his home: sudo useradd -d /home/toto -m toto
   make a user sudo:      usermod -aG sudo
